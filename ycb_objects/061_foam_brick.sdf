@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <sdf version='1.6'>
-<model name="simple_cuboid">
-  <link name="base_link_box">
+<model name="foam_brick">
+  <link name="base_link">
     <inertial>
-      <pose frame=''>0 0 0.04 0 0 0 </pose>
-      <mass>0.1</mass>
+      <pose frame=''>0 0 0.025 0 0 0 </pose>
+      <mass>0.028</mass>
         <inertia>
-          <ixx>0.000363</ixx>
+          <ixx>1.17e-5</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000363</iyy>
+          <iyy>1.9e-5</iyy>
           <iyz>0</iyz>
-          <izz>0.000006</izz>
+          <izz>1.9e-5</izz>
         </inertia>
     </inertial>
-    <visual name='pedestal_visual'>
-      <pose frame=''>0 0 0.04 0 0 0</pose>
+    <visual name='base_link'>
+      <pose frame=''>0 0 0.025 0 0 0</pose>
       <geometry>
         <box> 
-          <size>0.08 0.08 0.08</size>
+          <size>0.075 0.05 0.05</size>
         </box>
       </geometry>
       <material>
-        <diffuse>0 1 0 0.9</diffuse>
+        <diffuse>0.31 0.01 0.13 0.9</diffuse>
       </material>
     </visual>
 
@@ -39,10 +39,10 @@
       case a deviation of 0.0005 m from the visual surface).
      -->
     <collision name='box_collision'>
-      <pose frame=''>0 0 0.04 0 0 0</pose>
+      <pose frame=''>0 0 0.025 0 0 0</pose>
       <geometry>
         <box> 
-          <size>0.079 0.079 0.079</size>
+          <size>0.074 0.049 0.049</size>
         </box>
       </geometry>
       <material>
@@ -51,56 +51,56 @@
     </collision>
 
     <collision name='point_collision1'>
-      <pose frame=''>0.04 0.04 0 0 0 0</pose>
+      <pose frame=''>0.0375 0.025 0 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision2'>
-      <pose frame=''>0.04 -0.04 0 0 0 0</pose>
+      <pose frame=''>0.0375 -0.025 0 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision3'>
-      <pose frame=''>-0.04 0.04 0 0 0 0</pose>
+      <pose frame=''>-0.0375 0.025 0 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision4'>
-      <pose frame=''>-0.04 -0.04 0 0 0 0</pose>
+      <pose frame=''>-0.0375 -0.025 0 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision5'>
-      <pose frame=''>0.04 0.04 0.08 0 0 0</pose>
+      <pose frame=''>0.0375 0.025 0.05 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision6'>
-      <pose frame=''>0.04 -0.04 0.08 0 0 0</pose>
+      <pose frame=''>0.0375 -0.025 0.05 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision7'>
-      <pose frame=''>-0.04 0.04 0.08 0 0 0</pose>
+      <pose frame=''>-0.0375 0.025 0.05 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision8'>
-      <pose frame=''>-0.04 -0.04 0.08 0 0 0</pose>
+      <pose frame=''>-0.0375 -0.025 0.05 0 0 0</pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
