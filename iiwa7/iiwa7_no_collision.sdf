@@ -292,7 +292,7 @@
       </inertial>
 
       <visual name='iiwa_link_6_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0.121 0 3.14159 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
