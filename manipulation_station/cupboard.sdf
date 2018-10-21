@@ -96,6 +96,9 @@
     <pose>-0.008 -0.1395 0 0 0 </pose>
     <axis>
       <xyz> 0 0 1 </xyz>
+      <limit>
+        <effort>0</effort>
+      </limit>
       <dynamics>
         <damping>1.0</damping>
       </dynamics>
@@ -167,6 +170,9 @@
     <pose>-0.008 0.1395 0 0 0 </pose>
     <axis>
       <xyz> 0 0 1 </xyz>
+      <limit>
+        <effort>0</effort>
+      </limit>
       <dynamics>
         <damping>1.0</damping>
       </dynamics>
