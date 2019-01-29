@@ -9,6 +9,10 @@ All files under `./meshes` attributed to the
 The original objects were downloaded on 2019-02-04 via
 `./download_originals.py`.
 
+## Modifications
+
+The `.mtl` and `*.obj` files were modified to reflect file renames.
+
 ## Scope
 
 This contains a small subset of objects from the YCB dataset for use with
