@@ -85,3 +85,10 @@ for object_name in object_names:
                 members.append(member)
         tar.extractall(path=mesh_dir, members=members)
     assert all([x in rename_map for x in desired_files])
+    # Make adjustment to MTL files.
+    png_file, obj_file, mtl_file = [rename_map[x] for x in desired_files]
+    mtl_path = join(mesh_dir, mtl_file)
+    with open(mtl_path) as f:
+        mtl_text = f.read()
+    with open(mtl_path, 'w') as f:
+        f.write(mtl_text.replace("texture_map.png", png_file).rstrip() + "\n")
