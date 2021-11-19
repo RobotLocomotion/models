@@ -1,0 +1,827 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="block">
+    <link name="block">
+
+      <visual name="left_visual">
+        <pose>0.0 0.03125 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.032 0.0015 0.0192</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="left_collision">
+        <pose>0.0 0.03125 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.032 0.0015 0.0192</size>
+          </box>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="right_visual">
+        <pose>0.0 -0.03125 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.032 0.0015 0.0192</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="right_collision">
+        <pose>0.0 -0.03125 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.032 0.0015 0.0192</size>
+          </box>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="front_visual">
+        <pose>0.01525 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.0015 0.064 0.0192</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="front_collision">
+        <pose>0.01525 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.0015 0.064 0.0192</size>
+          </box>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="back_visual">
+        <pose>-0.01525 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.0015 0.064 0.0192</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="back_collision">
+        <pose>-0.01525 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.0015 0.064 0.0192</size>
+          </box>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="top_visual">
+        <pose>0.0 0.0 0.008849999999999998 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.032 0.064 0.0015</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="top_collision">
+        <pose>0.0 0.0 0.008849999999999998 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.032 0.064 0.0015</size>
+          </box>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_1_1_visual">
+        <pose>-0.008 -0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_1_1_collision">
+        <pose>-0.008 -0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_1_2_visual">
+        <pose>-0.008 -0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_1_2_collision">
+        <pose>-0.008 -0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_1_3_visual">
+        <pose>-0.008 0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_1_3_collision">
+        <pose>-0.008 0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_1_4_visual">
+        <pose>-0.008 0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_1_4_collision">
+        <pose>-0.008 0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_2_1_visual">
+        <pose>0.008 -0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_2_1_collision">
+        <pose>0.008 -0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_2_2_visual">
+        <pose>0.008 -0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_2_2_collision">
+        <pose>0.008 -0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_2_3_visual">
+        <pose>0.008 0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_2_3_collision">
+        <pose>0.008 0.008 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="stud_2_4_visual">
+        <pose>0.008 0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="stud_2_4_collision">
+        <pose>0.008 0.024 0.01185 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0048</radius>
+            <length>0.0045</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="tube_1_1_visual">
+        <pose>0.0 -0.016 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.006625</radius>
+            <length>0.0167</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_1_collision">
+        <pose>0.0 -0.016 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.006625</radius>
+            <length>0.0167</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="tube_1_1_sphere_1_visual">
+        <pose>0.004578516408182896 -0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_1_sphere_1_collision">
+        <pose>0.004578516408182896 -0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_1_sphere_2_visual">
+        <pose>-0.004578516408182895 -0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_1_sphere_2_collision">
+        <pose>-0.004578516408182895 -0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_1_sphere_3_visual">
+        <pose>-0.004578516408182896 -0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_1_sphere_3_collision">
+        <pose>-0.004578516408182896 -0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_1_sphere_4_visual">
+        <pose>0.004578516408182894 -0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_1_sphere_4_collision">
+        <pose>0.004578516408182894 -0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_2_visual">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.006625</radius>
+            <length>0.0167</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_2_collision">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.006625</radius>
+            <length>0.0167</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="tube_1_2_sphere_1_visual">
+        <pose>0.004578516408182896 0.004578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_2_sphere_1_collision">
+        <pose>0.004578516408182896 0.004578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_2_sphere_2_visual">
+        <pose>-0.004578516408182895 0.004578516408182896 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_2_sphere_2_collision">
+        <pose>-0.004578516408182895 0.004578516408182896 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_2_sphere_3_visual">
+        <pose>-0.004578516408182896 -0.004578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_2_sphere_3_collision">
+        <pose>-0.004578516408182896 -0.004578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_2_sphere_4_visual">
+        <pose>0.004578516408182894 -0.004578516408182896 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_2_sphere_4_collision">
+        <pose>0.004578516408182894 -0.004578516408182896 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_3_visual">
+        <pose>0.0 0.016 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.006625</radius>
+            <length>0.0167</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_3_collision">
+        <pose>0.0 0.016 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.006625</radius>
+            <length>0.0167</length>
+          </cylinder>
+        </geometry>
+          <drake:proximity_properties>
+              <drake:rigid_hydroelastic/>
+              <drake:mesh_resolution_hint>0.5</drake:mesh_resolution_hint>
+          </drake:proximity_properties>
+      </collision>
+
+      <visual name="tube_1_3_sphere_1_visual">
+        <pose>0.004578516408182896 0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_3_sphere_1_collision">
+        <pose>0.004578516408182896 0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_3_sphere_2_visual">
+        <pose>-0.004578516408182895 0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_3_sphere_2_collision">
+        <pose>-0.004578516408182895 0.020578516408182895 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_3_sphere_3_visual">
+        <pose>-0.004578516408182896 0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_3_sphere_3_collision">
+        <pose>-0.004578516408182896 0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="tube_1_3_sphere_4_visual">
+        <pose>0.004578516408182894 0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="tube_1_3_sphere_4_collision">
+        <pose>0.004578516408182894 0.011421483591817105 -0.00805 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00030000000000000003</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="front_left_bottom_visual">
+        <pose>0.01525 0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="front_left_bottom_collision">
+        <pose>0.01525 0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="front_right_bottom_visual">
+        <pose>0.01525 -0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="front_right_bottom_collision">
+        <pose>0.01525 -0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="back_left_bottom_visual">
+        <pose>-0.01525 0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="back_left_bottom_collision">
+        <pose>-0.01525 0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="back_right_bottom_visual">
+        <pose>-0.01525 -0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="back_right_bottom_collision">
+        <pose>-0.01525 -0.03125 -0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="front_left_top_visual">
+        <pose>0.01525 0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="front_left_top_collision">
+        <pose>0.01525 0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="front_right_top_visual">
+        <pose>0.01525 -0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="front_right_top_collision">
+        <pose>0.01525 -0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="back_left_top_visual">
+        <pose>-0.01525 0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="back_left_top_collision">
+        <pose>-0.01525 0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <visual name="back_right_top_visual">
+        <pose>-0.01525 -0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="back_right_top_collision">
+        <pose>-0.01525 -0.03125 0.008887499999999998 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.00075</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>4.46464e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.3926399999999998e-06</iyy>
+          <iyz>0</iyz>
+          <izz>5.119999999999999e-06</izz>
+        </inertia>
+      </inertial>
+
+    </link>
+  </model>
+</sdf>
