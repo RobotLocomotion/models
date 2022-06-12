@@ -1,0 +1,2 @@
+  Per https://github.com/ros-industrial/universal_robot/blob/melodic-devel/ur_description/package.xml
+  the ur_description package from which these files are derived is BSD-3 licensed.

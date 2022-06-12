@@ -1,0 +1,24 @@
+﻿
+newmtl Material-0
+Kd 0.7 0.7 0.7
+Ka 0 0 0
+Ks 0 0 0
+d 1
+
+newmtl Thread
+Kd 0.866667 0.866667 0.890196
+Ka 0 0 0
+Ks 0.433333 0.433333 0.445098
+d 1
+
+newmtl Mtl
+Kd 0.866667 0.866667 0.890196
+Ka 0 0 0
+Ks 0.433333 0.433333 0.445098
+d 1
+
+newmtl DefaultMaterial~1
+Kd 0.9 0.9 0.9
+Ka 0.6 0.6 0.6
+Ks 0.25 0.25 0.25
+d 1
