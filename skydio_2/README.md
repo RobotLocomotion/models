@@ -1,6 +1,6 @@
 # Skydio 2
 
-This .obj, .mtl, and .png file were contributed by Abe Bachrach from Skydio.
+This .obj and .mtl file were contributed by Abe Bachrach from Skydio.
 
 Update: 2024-02-24.
 - The obj was manually edited to add additional faces to the underside of the
