@@ -29,9 +29,6 @@
       <geometry>
         <box size=".028 .01 .03"/>
       </geometry>
-      <material name="yellow">
-        <color rgba="0 1 1 1"/>
-      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -57,7 +54,6 @@
       <geometry>
         <box size=".018 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -78,7 +74,6 @@
       <geometry>
         <box size=".025 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -139,7 +134,6 @@
       <geometry>
         <box size=".028 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -165,7 +159,6 @@
       <geometry>
         <box size=".018 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -186,7 +179,6 @@
       <geometry>
         <box size=".025 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -256,7 +248,6 @@
       <geometry>
         <box size=".028 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -282,7 +273,6 @@
       <geometry>
         <box size=".018 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -303,7 +293,6 @@
       <geometry>
         <box size=".025 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -394,9 +383,6 @@
       <geometry>
         <box size=".1 .01 .1"/>
       </geometry>
-      <material name="yellow">
-        <color rgba="0 1 1 1"/>
-      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
