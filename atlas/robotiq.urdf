@@ -46,9 +46,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".028 .01 .03"/>
       </geometry>
-      <material name="yellow">
-        <color rgba="0 1 1 1"/>
-      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -74,7 +71,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".018 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -95,7 +91,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".025 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -250,11 +245,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 -0.52" xyz="0.050 -.028 0"/>
     <limit effort="100" lower="-2.111" upper="-0.199" velocity="100"/>
   </joint>
-  <loop_joint name="finger_1_fourbar_0_joint_3" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_1_fourbar_0_link_2" rpy="0 0 0" xyz=".05398 0 0"/>
-    <link2 link="finger_1_fourbar_0_link_3" rpy="0 0 0" xyz=".01473 0 0"/>
-  </loop_joint>
   <joint name="finger_1_fourbar_3_joint_0" type="continuous">
     <axis xyz="0 0 1"/>
     <parent link="finger_1_link_2"/>
@@ -276,11 +266,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <limit effort="100" lower="-1.367" upper="-0.995" velocity="100"/>
   </joint>
-  <loop_joint name="finger_1_fourbar_3_joint_3" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_1_fourbar_3_link_3" rpy="0 0 0" xyz="0.01270 0 0"/>
-    <link2 link="finger_1_fourbar_3_link_2" rpy="0 0 0" xyz="0.03810 0 0"/>
-  </loop_joint>
   <joint name="finger_1_fourbar_linkage_joint_0" type="continuous">
     <axis xyz="0 0 1"/>
     <parent link="finger_1_fourbar_0_link_3"/>
@@ -288,11 +273,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 0" xyz=".01473 0 0"/>
     <limit effort="100" lower="1.4" upper="1.5" velocity="100"/>
   </joint>
-  <loop_joint name="finger_1_fourbar_linkage_joint_1" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_1_fourbar_linkage" rpy="0 0 0" xyz=".015236 0 0"/>
-    <link2 link="finger_1_fourbar_3_link_1" rpy="0 0 0" xyz=".02222 0 0"/>
-  </loop_joint>
   <gazebo reference="finger_1_link_0">
     <material>Gazebo/FlatBlack</material>
     <turnGravityOff>true</turnGravityOff>
@@ -380,7 +360,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".028 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -406,7 +385,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".018 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -427,7 +405,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".025 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -582,11 +559,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 -0.52" xyz="0.050 -.028 0"/>
     <limit effort="100" lower="-2.111" upper="-0.199" velocity="100"/>
   </joint>
-  <loop_joint name="finger_2_fourbar_0_joint_3" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_2_fourbar_0_link_2" rpy="0 0 0" xyz=".05398 0 0"/>
-    <link2 link="finger_2_fourbar_0_link_3" rpy="0 0 0" xyz=".01473 0 0"/>
-  </loop_joint>
   <joint name="finger_2_fourbar_3_joint_0" type="continuous">
     <axis xyz="0 0 1"/>
     <parent link="finger_2_link_2"/>
@@ -608,11 +580,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <limit effort="100" lower="-1.367" upper="-0.995" velocity="100"/>
   </joint>
-  <loop_joint name="finger_2_fourbar_3_joint_3" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_2_fourbar_3_link_3" rpy="0 0 0" xyz="0.01270 0 0"/>
-    <link2 link="finger_2_fourbar_3_link_2" rpy="0 0 0" xyz="0.03810 0 0"/>
-  </loop_joint>
   <joint name="finger_2_fourbar_linkage_joint_0" type="continuous">
     <axis xyz="0 0 1"/>
     <parent link="finger_2_fourbar_0_link_3"/>
@@ -620,11 +587,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 0" xyz=".01473 0 0"/>
     <limit effort="100" lower="1.4" upper="1.5" velocity="100"/>
   </joint>
-  <loop_joint name="finger_2_fourbar_linkage_joint_1" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_2_fourbar_linkage" rpy="0 0 0" xyz=".015236 0 0"/>
-    <link2 link="finger_2_fourbar_3_link_1" rpy="0 0 0" xyz=".02222 0 0"/>
-  </loop_joint>
   <gazebo reference="finger_2_link_0">
     <material>Gazebo/FlatBlack</material>
     <turnGravityOff>true</turnGravityOff>
@@ -712,7 +674,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".028 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -738,7 +699,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".018 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -759,7 +719,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".025 .01 .03"/>
       </geometry>
-      <material name="yellow"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -914,11 +873,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 -0.52" xyz="0.050 -.028 0"/>
     <limit effort="100" lower="-2.111" upper="-0.199" velocity="100"/>
   </joint>
-  <loop_joint name="finger_middle_fourbar_0_joint_3" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_middle_fourbar_0_link_2" rpy="0 0 0" xyz=".05398 0 0"/>
-    <link2 link="finger_middle_fourbar_0_link_3" rpy="0 0 0" xyz=".01473 0 0"/>
-  </loop_joint>
   <joint name="finger_middle_fourbar_3_joint_0" type="continuous">
     <axis xyz="0 0 1"/>
     <parent link="finger_middle_link_2"/>
@@ -940,11 +894,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <limit effort="100" lower="-1.367" upper="-0.995" velocity="100"/>
   </joint>
-  <loop_joint name="finger_middle_fourbar_3_joint_3" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_middle_fourbar_3_link_3" rpy="0 0 0" xyz="0.01270 0 0"/>
-    <link2 link="finger_middle_fourbar_3_link_2" rpy="0 0 0" xyz="0.03810 0 0"/>
-  </loop_joint>
   <joint name="finger_middle_fourbar_linkage_joint_0" type="continuous">
     <axis xyz="0 0 1"/>
     <parent link="finger_middle_fourbar_0_link_3"/>
@@ -952,11 +901,6 @@ s-model_articulated - articulated version of the robotiq s-model,
     <origin rpy="0 0 0" xyz=".01473 0 0"/>
     <limit effort="100" lower="1.4" upper="1.5" velocity="100"/>
   </joint>
-  <loop_joint name="finger_middle_fourbar_linkage_joint_1" type="continuous">
-    <axis xyz="0 0 1"/>
-    <link1 link="finger_middle_fourbar_linkage" rpy="0 0 0" xyz=".015236 0 0"/>
-    <link2 link="finger_middle_fourbar_3_link_1" rpy="0 0 0" xyz=".02222 0 0"/>
-  </loop_joint>
   <gazebo reference="finger_middle_link_0">
     <material>Gazebo/FlatBlack</material>
     <turnGravityOff>true</turnGravityOff>
@@ -1020,9 +964,6 @@ s-model_articulated - articulated version of the robotiq s-model,
       <geometry>
         <box size=".1 .01 .1"/>
       </geometry>
-      <material name="yellow">
-        <color rgba="0 1 1 1"/>
-      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
