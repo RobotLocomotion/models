@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+/MODULE.bazel.lock
+/.bazel/
