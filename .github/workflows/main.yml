@@ -1,0 +1,72 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  bazel_test:
+    runs-on: ubuntu-latest
+    env:
+      # This is where bazelisk caches its downloads of Bazel.
+      BAZELISK_HOME: /home/runner/.cache/bazel_ci/bazelisk
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Ubuntu dependencies
+        run: .github/ci_setup.bash
+      # Restore the most appropriate caches.
+      #
+      # In the below: `github.ref` will be either "refs/pull/<pr_number>/merge"
+      # or "refs/heads/master"; `github.run_number` is a monotonically increasing
+      # serial number; and `github.run_attempt` is a typically 1.
+      #
+      # The `key` declared here will never match (since it encodes the current
+      # run_number) but illustrates the name we'll use to save the caches when
+      # we're done.
+      #
+      # However, one of the `restore-keys` patterns *should* always match. The
+      # effects we should see from the `restore-keys` patterns are:
+      #
+      # * When building the `master` branch, we'll always pull the most recently
+      #   updated master caches. Both restore keys say
+      #   "bazel_ci-refs/heads/master-" and the prior archives are named, e.g.,
+      #   "bazel_ci-refs/heads/master-####-#".  GitHub will use the *most
+      #   recently saved* archive name that matches the restore key prefix
+      #   (no matter the lexicographic ordering of the ####-# part).
+      #
+      # * Ditto for the first build of a PR; the first restore key will not
+      #   match anything, so it falls back to the master caches.
+      #
+      # * For subsequent builds of a PR, the first restore key, e.g.,
+      #   "bazel_ci-refs/pull/###/merge-" should match the most recently saved
+      #   PR key "bazel_ci-refs/pull/###/merge-####-#".
+      - uses: actions/cache/restore@v3
+        with:
+          path: ~/.cache/bazel_ci
+          key: bazel_ci-${{ github.ref }}-${{ github.run_number }}-${{ github.run_attempt }}
+          restore-keys: |
+            bazel_ci-${{ github.ref }}-
+            bazel_ci-refs/heads/master-
+      - name: Report cache sizes
+        run: |
+          du -ms ~/.cache/bazel_ci/* || true
+      # Actual testing.
+      - name: Bazel Test
+        run: |
+          ln -s .github/ci.bazelrc user.bazelrc
+          bazelisk test //...
+      # Save the updated cache snapshots, so we never do the same work twice.
+      # By default, actions/cache only saves after a successful workflow, but
+      # our caches are bags of files where we only ever add new files (not change
+      # an existing files), so it's always safe to snapshot.
+      - uses: actions/cache/save@v3
+        if: always()
+        with:
+          path: ~/.cache/bazel_ci
+          key: bazel_ci-${{ github.ref }}-${{ github.run_number }}-${{ github.run_attempt }}

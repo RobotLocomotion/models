@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+# This file adjusts Bazel's configuration for CI jobs.
+
+# Dump configuration details to the log.
+common --announce_rc=yes
+
+# Put the Bazel caches somewhere the CI runner will preserve them from one run
+# to the next. (All of ~/.cache/bazel_ci/ is preserved.)
+fetch --repository_cache /home/runner/.cache/bazel_ci/externals
+build --repository_cache /home/runner/.cache/bazel_ci/externals
+fetch --disk_cache /home/runner/.cache/bazel_ci/local_disk
+build --disk_cache /home/runner/.cache/bazel_ci/local_disk
