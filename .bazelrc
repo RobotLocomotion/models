@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+common --symlink_prefix=.bazel/
+common --keep_going=yes
+build --test_output=errors
+build --test_summary=terse
+
+# Try to import user-specific configuration local to workspace.
+try-import %workspace%/user.bazelrc

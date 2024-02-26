@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+load("@bazel_skylib//rules:diff_test.bzl", "diff_test")
+load(":defs.bzl", "xacro_file")
+
+_XACROS = {
+    "tri_homecart/homecart_bimanual.urdf": {
+        "src": "tri_homecart/homecart_bimanual.urdf.xacro",
+        "data": [],
+    },
+    "tri_homecart/homecart_cutting_board.sdf": {
+        "src": "tri_homecart/homecart_cutting_board.sdf.xacro",
+        "data": [],
+    },
+}
+
+# Generate the xacro output into a temp dir.
+[
+    xacro_file(
+        name = "gen/" + name,
+        src = attrs["src"],
+        data = attrs["data"],
+    )
+    for name, attrs in _XACROS.items()
+]
+
+# Cross-check that the committed files are up to date.
+[
+    diff_test(
+        name = name + ".diff_test",
+        failure_message = "To fix, run this command:\n  cp {} {}".format(
+            ".bazel/bin/gen/" + name,
+            name,
+        ),
+        file1 = ":gen/" + name,
+        file2 = name,
+    )
+    for name in _XACROS
+]

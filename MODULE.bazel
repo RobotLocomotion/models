@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+bazel_dep(name = "bazel_skylib", version = "1.5.0")
+bazel_dep(name = "rules_python", version = "0.31.0")
+
+http_archive = use_repo_rule(
+    "@bazel_tools//tools/build_defs/repo:http.bzl",
+    "http_archive",
+)
+
+http_archive(
+    name = "xacro",
+    build_file_content = """
+load("@bazel_skylib//rules:write_file.bzl", "write_file")
+load("@rules_python//python:defs.bzl", "py_binary")
+
+package(default_visibility = ["//visibility:public"])
+
+write_file(
+    name = "_write_ros_xacro_main",
+    out = "ros_xacro_main.py",
+    content = ["import xacro; xacro.main()"],
+)
+
+py_binary(
+    name = "xacro_bin",
+    main = "ros_xacro_main.py",
+    srcs = ["ros_xacro_main.py"] + glob(["xacro/**/*.py"]),
+    imports = ["."],
+)
+
+alias(name = "xacro", actual = ":xacro_bin")
+""",
+    sha256 = "dd9112a1bd955ba987c2a29d79aebf5a2892dfd362d661b7a345e28c0f5807b3",
+    strip_prefix = "xacro-2.0.10",
+    urls = [
+        "https://github.com/ros/xacro/archive/refs/tags/2.0.10.tar.gz",
+        "https://drake-mirror.csail.mit.edu/github/ros/xacro/2.0.10.tar.gz",
+        "https://s3.amazonaws.com/drake-mirror/github/ros/xacro/2.0.10.tar.gz",
+    ],
+)
