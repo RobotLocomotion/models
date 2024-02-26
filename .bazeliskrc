@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+USE_BAZEL_VERSION=7.0.2
