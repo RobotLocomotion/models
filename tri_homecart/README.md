@@ -6,4 +6,4 @@ represent a slightly simplified version of the model files used internally at
 TRI (most notably they are using a simplified version of the grippers).
 
 The `LICENSE` file in this directory applies to everything in this directory and
-its sub-directories unless otherwise marked.
+its sub-directories.

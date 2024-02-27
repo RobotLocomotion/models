@@ -35,7 +35,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_cantilever.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_cantilever.gltf"/>
       </geometry>
     </visual>
     <collision>
@@ -59,61 +59,61 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.18"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.16"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.14"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.12"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.08"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.06"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.04"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.02"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <collision>
@@ -145,7 +145,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_cantilever.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_cantilever.gltf"/>
       </geometry>
     </visual>
     <collision>
@@ -169,61 +169,61 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.18"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.16"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.14"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.12"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.08"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.06"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.04"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.02"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_arm_mount_stack.gltf"/>
       </geometry>
     </visual>
     <collision>
@@ -260,7 +260,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_baseplate.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_baseplate.gltf"/>
       </geometry>
     </visual>
     <collision>
@@ -279,7 +279,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_basecart.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_basecart.gltf"/>
       </geometry>
     </visual>
     <collision>
@@ -310,7 +310,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://drake_models/tri_homecart/assets/homecart_bimanual_upper_structure.obj"/>
+        <mesh filename="package://drake_models/tri_homecart/assets/homecart_bimanual_upper_structure.gltf"/>
       </geometry>
     </visual>
     <!-- upper angle collision spheres -->
