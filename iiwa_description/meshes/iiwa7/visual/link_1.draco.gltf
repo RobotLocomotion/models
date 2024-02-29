@@ -1,0 +1,133 @@
+{
+  "accessors": [
+    {
+      "name": "Node-Mesh_0_indices",
+      "componentType": 5123,
+      "count": 27822,
+      "min": [
+        0
+      ],
+      "max": [
+        5706
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "name": "Node-Mesh_0_positions",
+      "componentType": 5126,
+      "count": 5575,
+      "min": [
+        -0.0681075001127279,
+        -0.01012750100262525,
+        -0.06811850462026955
+      ],
+      "max": [
+        0.06806380940764109,
+        0.2511225113637007,
+        0.11471825366831578
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "Node-Mesh_0_normals",
+      "componentType": 5126,
+      "count": 5575,
+      "min": [
+        -1.0078278188611947,
+        -1.007843137254902,
+        -1.007843137254902
+      ],
+      "max": [
+        1.0078584556486092,
+        1.007843137254902,
+        1.007843137254902
+      ],
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "link_1.draco",
+      "byteLength": 14936,
+      "uri": "link_1.draco.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 14936
+    }
+  ],
+  "materials": [
+    {
+      "name": "default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Node-Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
