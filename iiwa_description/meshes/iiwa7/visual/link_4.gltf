@@ -89,12 +89,12 @@
   ],
   "materials": [
     {
-      "name": "grey",
+      "name": "orange",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.2,
-          0.2,
-          0.2,
+          1.0,
+          0.15,
+          0,
           1
         ],
         "metallicFactor": 0.4,
