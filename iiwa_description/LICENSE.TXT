@@ -7,6 +7,6 @@ https://github.com/SalvoVirga/iiwa_stack/blob/2fa5bd5/LICENSE.txt
 
 Since obtaining the model files from the above-mentioned source, they were
 substantially modified for use by Drake. For example, the original STL mesh
-files were converted to OBJ files, and various mass / inertia properties and
+files were converted to other formats, and various mass / inertia properties and
 collision models were modified. Our changes are covered by Drake's license terms
 (see LICENSE.TXT in Drake's root folder).
