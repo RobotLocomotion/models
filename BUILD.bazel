@@ -4,6 +4,14 @@ load("@bazel_skylib//rules:diff_test.bzl", "diff_test")
 load(":defs.bzl", "xacro_file")
 
 _XACROS = {
+    "realsense2_description/urdf/d415.urdf": {
+        "src": "realsense2_description/urdf/customized/test_d415_camera.urdf.xacro",
+        "data": [
+            "realsense2_description/urdf/customized/_d415.urdf.xacro",
+            "realsense2_description/urdf/customized/_materials.urdf.xacro",
+            "realsense2_description/urdf/customized/_usb_plug.urdf.xacro",
+        ],
+    },
     "tri_homecart/homecart_bimanual.urdf": {
         "src": "tri_homecart/homecart_bimanual.urdf.xacro",
         "data": [],
@@ -36,4 +44,28 @@ _XACROS = {
         file2 = name,
     )
     for name in _XACROS
+]
+
+# Patch the realsense files to suit this repository.
+[
+    genrule(
+        name = "_gen_{}".format(filename),
+        srcs = [
+            "realsense2_description/urdf/customize.sed",
+            "realsense2_description/urdf/{}".format(filename),
+        ],
+        outs = [
+            "realsense2_description/urdf/customized/{}".format(filename),
+        ],
+        cmd = "sed --file={} {} > $@".format(
+            "$(execpath realsense2_description/urdf/customize.sed)",
+            "$(execpath realsense2_description/urdf/{})".format(filename),
+        ),
+    )
+    for filename in [
+        "test_d415_camera.urdf.xacro",
+        "_d415.urdf.xacro",
+        "_materials.urdf.xacro",
+        "_usb_plug.urdf.xacro",
+    ]
 ]
