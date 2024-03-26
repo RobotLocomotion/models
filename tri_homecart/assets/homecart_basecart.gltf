@@ -3,6 +3,9 @@
 		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
+	"extensionsUsed": [
+		"KHR_texture_basisu"
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -140,7 +143,12 @@
 	"textures":[
 		{
 			"sampler":0,
-			"source":0
+			"source":0,
+			"extensions": {
+				"KHR_texture_basisu": {
+					"source": 1
+				}
+			}
 		}
 	],
 	"images":[
@@ -148,6 +156,11 @@
 			"mimeType":"image/png",
 			"name":"homecart_cutting_board_color",
 			"uri":"homecart_cutting_board_color.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"name":"homecart_cutting_board_color",
+			"uri":"homecart_cutting_board_color.ktx2"
 		}
 	],
 	"accessors":[
