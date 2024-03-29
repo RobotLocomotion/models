@@ -20,6 +20,20 @@ _XACROS = {
         "src": "tri_homecart/homecart_cutting_board.sdf.xacro",
         "data": [],
     },
+    "ur_description/urdf/ur3e_cylinders_collision.urdf": {
+        "src": "ur_description/urdf/ur3e_cylinders_collision.urdf.xacro",
+        "data": [
+            "ur_description/urdf/ur.transmission.xacro",
+            "ur_description/urdf/ur3e.urdf.xacro",
+        ],
+    },
+    "ur_description/urdf/ur3e_spheres_collision.urdf": {
+        "src": "ur_description/urdf/ur3e_spheres_collision.urdf.xacro",
+        "data": [
+            "ur_description/urdf/ur.transmission.xacro",
+            "ur_description/urdf/ur3e.urdf.xacro",
+        ],
+    },
 }
 
 # Generate the xacro output into a temp dir.
