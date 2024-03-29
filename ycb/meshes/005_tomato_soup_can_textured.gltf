@@ -1,191 +1,203 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 8746,
-      "min": [
-        -0.0431240014731884,
-        0.00007899999764049426,
-        -0.11788900196552277
-      ],
-      "max": [
-        0.024786999449133873,
-        0.10193400084972382,
-        -0.05014599859714508
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 8746,
-      "min": [
-        -0.9999870657920837,
-        -0.9999995827674866,
-        -1
-      ],
-      "max": [
-        0.9999966621398926,
-        0.9999996423721313,
-        0.9999844431877136
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_texcoords",
-      "componentType": 5126,
-      "count": 8746,
-      "min": [
-        0.009836000390350819,
-        0.017288999632000923
-      ],
-      "max": [
-        0.9901639819145203,
-        0.9901639819145203
-      ],
-      "type": "VEC2",
-      "bufferView": 2,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 49152,
-      "min": [
-        0
-      ],
-      "max": [
-        8745
-      ],
-      "type": "SCALAR",
-      "bufferView": 3,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "005_tomato_soup_can_textured",
-      "byteLength": 378176,
-      "uri": "005_tomato_soup_can_textured.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 104952,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 104952,
-      "byteOffset": 104952,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 69968,
-      "byteOffset": 209904,
-      "byteStride": 8,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_3",
-      "buffer": 0,
-      "byteLength": 98304,
-      "byteOffset": 279872,
-      "target": 34963
-    }
-  ],
-  "images": [
-    {
-      "name": "005_tomato_soup_can_textured",
-      "uri": "005_tomato_soup_can_textured.png"
-    }
-  ],
-  "materials": [
-    {
-      "name": "material_0",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "samplers": [
-    {
-      "magFilter": 9729,
-      "minFilter": 9986,
-      "wrapS": 10497,
-      "wrapT": 10497
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "name": "005_tomato_soup_can_textured",
-      "sampler": 0,
-      "source": 0
-    }
-  ]
+	"accessors":[
+		{
+			"name":"Node-Mesh_0_positions",
+			"componentType":5126,
+			"count":8746,
+			"min":[
+				-0.0431240014731884,
+				7.899999764049426e-05,
+				-0.11788900196552277
+			],
+			"max":[
+				0.024786999449133873,
+				0.10193400084972382,
+				-0.05014599859714508
+			],
+			"type":"VEC3",
+			"bufferView":0,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_normals",
+			"componentType":5126,
+			"count":8746,
+			"min":[
+				-0.9999870657920837,
+				-0.9999995827674866,
+				-1
+			],
+			"max":[
+				0.9999966621398926,
+				0.9999996423721313,
+				0.9999844431877136
+			],
+			"type":"VEC3",
+			"bufferView":1,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_texcoords",
+			"componentType":5126,
+			"count":8746,
+			"min":[
+				0.009836000390350819,
+				0.017288999632000923
+			],
+			"max":[
+				0.9901639819145203,
+				0.9901639819145203
+			],
+			"type":"VEC2",
+			"bufferView":2,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_indices",
+			"componentType":5123,
+			"count":49152,
+			"min":[
+				0
+			],
+			"max":[
+				8745
+			],
+			"type":"SCALAR",
+			"bufferView":3,
+			"byteOffset":0
+		}
+	],
+	"asset":{
+		"generator":"obj2gltf",
+		"version":"2.0"
+	},
+	"buffers":[
+		{
+			"name":"005_tomato_soup_can_textured",
+			"byteLength":378176,
+			"uri":"005_tomato_soup_can_textured.bin"
+		}
+	],
+	"bufferViews":[
+		{
+			"name":"bufferView_0",
+			"buffer":0,
+			"byteLength":104952,
+			"byteOffset":0,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_1",
+			"buffer":0,
+			"byteLength":104952,
+			"byteOffset":104952,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_2",
+			"buffer":0,
+			"byteLength":69968,
+			"byteOffset":209904,
+			"byteStride":8,
+			"target":34962
+		},
+		{
+			"name":"bufferView_3",
+			"buffer":0,
+			"byteLength":98304,
+			"byteOffset":279872,
+			"target":34963
+		}
+	],
+	"images":[
+		{
+			"name":"005_tomato_soup_can_textured",
+			"uri":"005_tomato_soup_can_textured.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"005_tomato_soup_can_textured.ktx2"
+		}
+	],
+	"materials":[
+		{
+			"name":"material_0",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":0
+				},
+				"baseColorFactor":[
+					1,
+					1,
+					1,
+					1
+				],
+				"metallicFactor":0,
+				"roughnessFactor":1
+			},
+			"emissiveFactor":[
+				0,
+				0,
+				0
+			],
+			"alphaMode":"OPAQUE",
+			"doubleSided":false
+		}
+	],
+	"meshes":[
+		{
+			"name":"Node-Mesh",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":0,
+						"NORMAL":1,
+						"TEXCOORD_0":2
+					},
+					"indices":3,
+					"material":0,
+					"mode":4
+				}
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"Node",
+			"mesh":0
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9986,
+			"wrapS":10497,
+			"wrapT":10497
+		}
+	],
+	"scene":0,
+	"scenes":[
+		{
+			"nodes":[
+				0
+			]
+		}
+	],
+	"textures":[
+		{
+			"name":"005_tomato_soup_can_textured",
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":1
+				}
+			}
+		}
+	],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
+	]
 }
