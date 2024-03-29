@@ -1,5 +1,10 @@
 # Schunk WSG50 Meshes
 
+This folder contains a model of the Schunk WSG 50 gripper.
+
+Is was created from scratch for use in Drake, and is not based on any other
+original SDFormat file from somewhere else.
+
 ## Attribution 
 
 All files under `./meshes` were created in CAD using Schunk's drawing
@@ -12,6 +17,5 @@ exported from Solidworks using the CAD files.
 
 ## Disclaimer 
 
-As this is only based on Schunk's drawing files (not the CAD file), the dimensions of the model are accurate only up to the published dimensions in the drawing. Some details such as hole dimensions may not be entirely accurate.  
-
+As this is only based on Schunk's drawing files (not the CAD file), the dimensions of the model are accurate only up to the published dimensions in the drawing. Some details such as hole dimensions may not be entirely accurate.
 
