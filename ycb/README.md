@@ -13,7 +13,8 @@ The original objects were downloaded on 2019-02-04 via
 
 ## Modifications
 
-The `.mtl` and `*.obj` files were modified to reflect file renames.
+The `.mtl` and `*.obj` files were modified to reflect file renames, and then
+converted to gltf using `obj2gltf`.
 
 ## Scope
 
