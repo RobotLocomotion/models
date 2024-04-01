@@ -114,6 +114,7 @@
 	"images":[
 		{
 			"name":"006_mustard_bottle_textured",
+			"mimeType":"image/png",
 			"uri":"006_mustard_bottle_textured.png"
 		},
 		{
