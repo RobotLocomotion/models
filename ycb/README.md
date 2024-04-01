@@ -16,6 +16,12 @@ The original objects were downloaded on 2019-02-04 via
 The `.mtl` and `*.obj` files were modified to reflect file renames, then
 converted to gltf using `obj2gltf`, then amended to use `*.ktx2` textures.
 
+### Sugar box
+
+The `004_sugar_box_textured.obj` (and its associated `*.mtl` file) are kept
+around in support of obj-specific tutorials and unit tests inside Drake; it is
+not used by any of our SDFormat files.
+
 ## Scope
 
 This contains a small subset of objects from the YCB dataset for use with
