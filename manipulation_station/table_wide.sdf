@@ -5,7 +5,7 @@
       <visual name="table_visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/manipulation_station/table_wide.obj</uri>
+            <uri>package://drake_models/manipulation_station/assets/table_wide.obj</uri>
           </mesh>
         </geometry>
       </visual>
