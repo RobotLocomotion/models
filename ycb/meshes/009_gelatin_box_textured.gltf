@@ -114,6 +114,7 @@
 	"images":[
 		{
 			"name":"009_gelatin_box_textured",
+			"mimeType":"image/png",
 			"uri":"009_gelatin_box_textured.png"
 		},
 		{

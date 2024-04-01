@@ -114,6 +114,7 @@
 	"images":[
 		{
 			"name":"003_cracker_box_textured",
+			"mimeType":"image/png",
 			"uri":"003_cracker_box_textured.png"
 		},
 		{

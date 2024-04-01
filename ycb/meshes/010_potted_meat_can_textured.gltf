@@ -114,6 +114,7 @@
 	"images":[
 		{
 			"name":"010_potted_meat_can_textured",
+			"mimeType":"image/png",
 			"uri":"010_potted_meat_can_textured.png"
 		},
 		{
