@@ -28,9 +28,7 @@
       Positive origin axes extend "forward" for X and "left" for Y, with
       respect to the robot arm origins.
   -->
-  <link name="homecart_base_link">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-  </link>
+  <link name="homecart_base_link"/>
   <link name="left_arm_mount_cantilever_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.0"/>
@@ -133,9 +131,7 @@
     <parent link="left_arm_mount_cantilever_link"/>
     <child link="left_arm_mount_stack_link"/>
   </joint>
-  <link name="left_arm_base_link">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-  </link>
+  <link name="left_arm_base_link"/>
   <joint name="left_arm_base_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0.2"/>
     <parent link="left_arm_mount_stack_link"/>
@@ -243,9 +239,7 @@
     <parent link="right_arm_mount_cantilever_link"/>
     <child link="right_arm_mount_stack_link"/>
   </joint>
-  <link name="right_arm_base_link">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-  </link>
+  <link name="right_arm_base_link"/>
   <joint name="right_arm_base_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0.2"/>
     <parent link="right_arm_mount_stack_link"/>
