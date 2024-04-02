@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- Mesh file and approximate numbers are from Abe Bachrach at Skdio.  -->
+<!-- Mesh file and approximate numbers are from Abe Bachrach at Skydio.  -->
 <robot name="quadrotor">
   <!--
   Axes are standard vehicle coordinates:
