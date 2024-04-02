@@ -7,8 +7,6 @@ expressive conditional statements [1].
 ```
 source /opt/ros/kinetic/setup.bash
 
-cd drake/manipulation/models
-
 export ROS_PACKAGE_PATH=`pwd`:$ROS_PACKAGE_PATH
 
 cd iiwa_description

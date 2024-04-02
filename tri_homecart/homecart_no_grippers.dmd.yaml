@@ -37,7 +37,7 @@ directives:
       rotation: !Rpy { deg: [0, 0, 270] }
 - add_model:
     name: ur3_left
-    file: package://drake/manipulation/models/ur3e/ur3e_cylinders_collision.urdf
+    file: package://drake_models/ur_description/urdf/ur3e_cylinders_collision.urdf
 - add_weld:
     parent: ur3_left_origin
     child: ur3_left::ur_base_link
@@ -51,7 +51,7 @@ directives:
       rotation: !Rpy { deg: [0, 0, 270] }
 - add_model:
     name: ur3_right
-    file: package://drake/manipulation/models/ur3e/ur3e_cylinders_collision.urdf
+    file: package://drake_models/ur_description/urdf/ur3e_cylinders_collision.urdf
 - add_weld:
     parent: ur3_right_origin
     child: ur3_right::ur_base_link
