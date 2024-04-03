@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 load("@bazel_skylib//rules:diff_test.bzl", "diff_test")
+load("@bazel_skylib//rules:write_file.bzl", "write_file")
+load("@rules_python//python:defs.bzl", "py_test")
+load("@rules_python//python:pip.bzl", "compile_pip_requirements")
 load(":defs.bzl", "xacro_file")
 
 _XACROS = {
@@ -83,3 +86,34 @@ _XACROS = {
         "_usb_plug.urdf.xacro",
     ]
 ]
+
+_ALL = glob([
+    "**/*",
+], exclude = [
+    ".*/**/*",
+])
+
+write_file(
+    name = "_inventory",
+    out = "inventory.txt",
+    content = _ALL,
+)
+
+py_test(
+    name = "parse_test",
+    srcs = [".private/parse_test.py"],
+    data = _ALL + [
+        ":inventory.txt",
+    ],
+    deps = [
+        "@pip//drake:pkg",
+    ],
+)
+
+# Tool to update the requirements file.
+compile_pip_requirements(
+    name = "requirements",
+    src = ".private/requirements.in",
+    requirements_txt = ".private/requirements_lock.txt",
+    tags = ["manual"],
+)

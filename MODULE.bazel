@@ -3,6 +3,20 @@
 bazel_dep(name = "bazel_skylib", version = "1.5.0")
 bazel_dep(name = "rules_python", version = "0.31.0")
 
+python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+python.toolchain(
+    python_version = "3.12",
+)
+use_repo(python)
+
+pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
+pip.parse(
+    hub_name = "pip",
+    python_version = "3.12",
+    requirements_lock = "//:.private/requirements_lock.txt",
+)
+use_repo(pip, "pip")
+
 http_archive = use_repo_rule(
     "@bazel_tools//tools/build_defs/repo:http.bzl",
     "http_archive",
