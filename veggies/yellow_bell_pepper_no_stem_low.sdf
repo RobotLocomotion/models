@@ -2,7 +2,6 @@
 <sdf version="1.7" xmlns:drake="drake.mit.edu">
   <model name="yellow_bell_pepper_no_stem">
     <link name="yellow_bell_pepper_no_stem">
-      <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0.000537 -0.00272 0.0384 0 0 0</pose>
         <mass>0.159</mass>
@@ -15,8 +14,7 @@
           <izz> 0.000107</izz>
         </inertia>
       </inertial>
-      <visual name="yellow_bell_pepper_no_stem">
-        <pose>0 0 0 0 0 0</pose>
+      <visual name="visual">
         <geometry>
           <mesh>
             <uri>package://drake_models/veggies/assets/yellow_bell_pepper_no_stem_low.obj</uri>
@@ -25,7 +23,6 @@
         </geometry>
       </visual>
       <collision name="collision">
-        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>package://drake_models/veggies/assets/yellow_bell_pepper_no_stem_low.vtk</uri>
@@ -41,8 +38,8 @@
           <drake:hunt_crossley_dissipation>10</drake:hunt_crossley_dissipation>
           <!-- Both mu_dynamic and mu_static are used in Continuous system.
             Only mu_dynamic is used in Discrete system.  -->
-          <drake:mu_dynamic> 1 </drake:mu_dynamic>
-          <drake:mu_static> 1 </drake:mu_static>
+          <drake:mu_dynamic>0.5</drake:mu_dynamic>
+          <drake:mu_static>1.0</drake:mu_static>
         </drake:proximity_properties>
       </collision>
     </link>
