@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:drake="http://drake.mit.edu" name="bowl">
+  <link name="bowl">
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="-6.8577139059790044e-06 -1.7473168538940867e-05 -0.003065665933405878"/>
+      <inertia ixx="0.0009715521141455593"
+               ixy="-1.8443983471817828e-07"
+               ixz="2.4082416205698527e-08"
+               iyy="0.0009793965751030533"
+               iyz="6.72877272895659e-08"
+               izz="0.001592061359500251"/>
+    </inertial>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="package://drake_models/dishes/assets/evo_bowl_no_mtl.obj"/>
+      </geometry>
+      <material>
+       <color rgba="0.9 0.8 0.7 0.5"/>
+      </material>
+    </visual>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="package://drake_models/dishes/assets/evo_bowl_fine44k.vtk"/>
+      </geometry>
+      <drake:proximity_properties>
+        <drake:compliant_hydroelastic/>
+        <drake:hydroelastic_modulus value="1e7"/>
+        <drake:mu_dynamic value="0.5"/>
+        <drake:hunt_crossley_dissipation value="1.25"/>
+      </drake:proximity_properties>
+    </collision>
+  </link>
+</robot>
