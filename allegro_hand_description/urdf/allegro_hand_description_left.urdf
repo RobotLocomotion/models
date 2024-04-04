@@ -4,7 +4,7 @@
   unofficial ROS package of Allegro Hand (https://github.com/felixduvallet/
   allegro-hand-ros/tree/master/allegro_hand_description). The conversion is
   applied using the ROS package xacro to convert into urdf files. The model
-  files (.obj files and .mtl files) are converted from the .STL files from the
+  files (.gltf and .bin files) are converted from the .STL files from the
   same source. The physical parameters of the model in the cited unofficial
   fork of the Allegro hand have non-physical values. More precisely, many of
   the inertia matrices are not SPD. Therefore we recomputed all the inertia
@@ -38,12 +38,9 @@
   <link name="palm_link">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/base_link_left.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/base_link_left.gltf"/>
       </geometry>
       <origin rpy="-1.5707963259 0 0" xyz="0 0 0 "/>
-      <material name="black">
-        <color rgba="0.2 0.2 0.2 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.009300 0 -0.0475"/>
@@ -61,9 +58,8 @@
   <link name="link_8">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_0.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_0.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -95,9 +91,8 @@
   <link name="link_9">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_1.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_1.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -129,9 +124,8 @@
   <link name="link_10">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_2.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_2.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -163,9 +157,8 @@
   <link name="link_11">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -197,11 +190,8 @@
   <link name="link_11_tip">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0_tip.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0_tip.gltf"/>
       </geometry>
-      <material name="white">
-        <color rgba=".9 .9 .9 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -223,9 +213,8 @@
   <link name="link_4">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_0.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_0.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -257,9 +246,8 @@
   <link name="link_5">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_1.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_1.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -291,9 +279,8 @@
   <link name="link_6">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_2.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_2.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -325,9 +312,8 @@
   <link name="link_7">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -359,11 +345,8 @@
   <link name="link_7_tip">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0_tip.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0_tip.gltf"/>
       </geometry>
-      <material name="white">
-        <color rgba=".9 .9 .9 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -385,9 +368,8 @@
   <link name="link_0">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_0.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_0.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -419,9 +401,8 @@
   <link name="link_1">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_1.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_1.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -453,9 +434,8 @@
   <link name="link_2">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_2.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_2.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -487,9 +467,8 @@
   <link name="link_3">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0.gltf"/>
       </geometry>
-      <material name="black"/>
     </visual>
     <collision>
       <geometry>
@@ -521,11 +500,8 @@
   <link name="link_3_tip">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0_tip.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_3.0_tip.gltf"/>
       </geometry>
-      <material name="white">
-        <color rgba=".9 .9 .9 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -547,11 +523,8 @@
   <link name="link_12">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_12.0_left.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_12.0_left.gltf"/>
       </geometry>
-      <material name="black">
-        <color rgba=".2 .2 .2 1"/>
-      </material>
       <origin rpy="3.1415926518 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
@@ -584,11 +557,8 @@
   <link name="link_13">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_13.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_13.0.gltf"/>
       </geometry>
-      <material name="black">
-        <color rgba=".2 .2 .2 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -620,10 +590,8 @@
   <link name="link_14">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_14.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_14.0.gltf"/>
       </geometry>
-      <material name="black">
-                </material>
     </visual>
     <collision>
       <geometry>
@@ -655,10 +623,8 @@
   <link name="link_15">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_15.0.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_15.0.gltf"/>
       </geometry>
-      <material name="black">
-                </material>
     </visual>
     <collision>
       <geometry>
@@ -690,11 +656,8 @@
   <link name="link_15_tip">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_15.0_tip.obj"/>
+        <mesh filename="package://drake_models/allegro_hand_description/meshes/link_15.0_tip.gltf"/>
       </geometry>
-      <material name="white">
-        <color rgba=".9 .9 .9 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
