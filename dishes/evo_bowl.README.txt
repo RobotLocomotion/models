@@ -1,2 +1,7 @@
 EVO Bowl, white, 16oz
 https://www.amazon.com/dp/B01KS7XE1Q
+
+evo_bowl.sdf uses a rigid-hydroelastic mesh with 2X scaling.
+
+evo_bowl_compliant.urdf uses a compliant-hydroelastic mesh.
+
