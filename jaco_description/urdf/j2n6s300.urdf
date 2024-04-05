@@ -51,11 +51,8 @@
   <link name="j2n6s300_link_base">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/base.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/base.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
@@ -80,19 +77,13 @@
   <link name="j2n6s300_link_1">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/shoulder.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/shoulder.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/ring_big.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/ring_big.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.627451 0.627451 0.627451 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.06"/>
@@ -126,19 +117,13 @@
   <link name="j2n6s300_link_2">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/arm.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/arm.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/ring_big.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/ring_big.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.627451 0.627451 0.627451 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="1.57079632679 0 0" xyz="0 -0.21 0"/>
@@ -172,19 +157,13 @@
   <link name="j2n6s300_link_3">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/forearm.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/forearm.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/ring_big.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/ring_big.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.627451 0.627451 0.627451 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="1.57079632679 0 0" xyz="0 0.12 0"/>
@@ -218,19 +197,13 @@
   <link name="j2n6s300_link_4">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/wrist.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/wrist.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/ring_small.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/ring_small.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.627451 0.627451 0.627451 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.01 -0.02"/>
@@ -264,19 +237,13 @@
   <link name="j2n6s300_link_5">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/wrist.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/wrist.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/ring_small.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/ring_small.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.627451 0.627451 0.627451 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -309,19 +276,13 @@
   <link name="j2n6s300_link_6">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/hand_3finger.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/hand_3finger.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.1788232 0.1788232 0.1788232 1"/>
-      </material>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/ring_small.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/ring_small.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.627451 0.627451 0.627451 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -363,11 +324,8 @@
   <link name="j2n6s300_link_finger_1">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/finger_proximal.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/finger_proximal.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.5960783 0.5960783 0.5960783 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -400,11 +358,8 @@
   <link name="j2n6s300_link_finger_tip_1">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/finger_distal.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/finger_distal.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.5960783 0.5960783 0.5960783 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -427,11 +382,8 @@
   <link name="j2n6s300_link_finger_2">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/finger_proximal.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/finger_proximal.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.5960783 0.5960783 0.5960783 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -464,11 +416,8 @@
   <link name="j2n6s300_link_finger_tip_2">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/finger_distal.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/finger_distal.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.5960783 0.5960783 0.5960783 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -491,11 +440,8 @@
   <link name="j2n6s300_link_finger_3">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/finger_proximal.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/finger_proximal.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.5960783 0.5960783 0.5960783 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
@@ -528,11 +474,8 @@
   <link name="j2n6s300_link_finger_tip_3">
     <visual>
       <geometry>
-        <mesh filename="package://drake_models/jaco_description/meshes/finger_distal.obj"/>
+        <mesh filename="package://drake_models/jaco_description/meshes/finger_distal.gltf"/>
       </geometry>
-      <material>
-        <color rgba="0.5960783 0.5960783 0.5960783 1"/>
-      </material>
     </visual>
     <collision>
       <geometry>
