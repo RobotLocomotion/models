@@ -1,0 +1,114 @@
+{
+  "accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":1721,
+			"max":[
+				0.04366200044751167,
+				0.011250000447034836,
+				0.014582999981939793
+			],
+			"min":[
+				-0.009498000144958496,
+				-0.011250000447034836,
+				-0.005499999970197678
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":1721,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5123,
+			"count":5826,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":20652,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":20652,
+			"byteOffset":20652,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":11652,
+			"byteOffset":41304,
+			"target":34963
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":52956,
+			"uri":"finger_distal.bin"
+		}
+	],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "materials": [
+    {
+      "name": "default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1560783,
+          0.1560783,
+          0.1560783,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Node-Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
