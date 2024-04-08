@@ -57,11 +57,5 @@ SHA d7cd447344.
 The license for these files is the Apache 2.0 license.  (see
 [`LICENSE`](./LICENSE) for more information).
 
-The `.mtl` and `.obj` files were generated from the `.dae` models in
-the original repository.  The models were converted using `pyassimp`.
-For example:
-
-```
-import pyassimp
-pyassimp.export(pyassimp.load("link3.dae"), "link3.obj", file_type="obj")
-```
+The glTF files were generated from the `.dae` models in the original repository
+(via a time as OBJ files).
