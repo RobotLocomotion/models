@@ -25,7 +25,7 @@
         <pose>0 0 0 0 0 1.570796</pose>
         <geometry>
         <mesh>
-        <uri>package://drake_models/manipulation_station/assets/bin.obj</uri>
+        <uri>package://drake_models/manipulation_station/assets/bin.gltf</uri>
         </mesh>
         </geometry>
       </visual>
