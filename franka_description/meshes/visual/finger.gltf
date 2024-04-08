@@ -1,0 +1,231 @@
+{
+  "accessors": [
+    {
+      "name": "node0_1_0_positions",
+      "componentType": 5126,
+      "count": 786,
+      "min": [
+        -0.008930683135986328,
+        -0.010906689800322056,
+        -0.05389988049864769
+      ],
+      "max": [
+        0.008931337855756283,
+        0.00008376429468626156,
+        -0.03609037026762962
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "node0_1_0_normals",
+      "componentType": 5126,
+      "count": 786,
+      "min": [
+        -0.9999531507492065,
+        -0.9999999403953552,
+        -0.9999403953552246
+      ],
+      "max": [
+        0.9999407529830933,
+        0.9999603629112244,
+        0.9999064803123474
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "node0_1_0_indices",
+      "componentType": 5123,
+      "count": 786,
+      "min": [
+        0
+      ],
+      "max": [
+        785
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "node1_1_0_positions",
+      "componentType": 5126,
+      "count": 1086,
+      "min": [
+        -0.010500900447368622,
+        -0.02634548954665661,
+        -0.05385756120085716
+      ],
+      "max": [
+        0.01050155982375145,
+        -0.002482414012774825,
+        -0.00013333199603948742
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 9432
+    },
+    {
+      "name": "node1_1_0_normals",
+      "componentType": 5126,
+      "count": 1086,
+      "min": [
+        -0.9999886155128479,
+        -1,
+        -1
+      ],
+      "max": [
+        0.9999829530715942,
+        1,
+        0.9999992251396179
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 9432
+    },
+    {
+      "name": "node1_1_0_indices",
+      "componentType": 5123,
+      "count": 1086,
+      "min": [
+        0
+      ],
+      "max": [
+        1085
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 1572
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "finger",
+      "byteLength": 48672,
+      "uri": "finger.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 22464,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 22464,
+      "byteOffset": 22464,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 3744,
+      "byteOffset": 44928,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Part__Feature_007",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.250980406999588,
+          0.250980406999588,
+          0.250980406999588,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Part__Feature001_006",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9019607901573181,
+          0.9215685725212097,
+          0.9294118285179138,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "node0_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "node1_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "node0",
+      "mesh": 0
+    },
+    {
+      "name": "node1",
+      "mesh": 1
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ]
+}
