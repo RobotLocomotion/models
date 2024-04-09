@@ -17,13 +17,10 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/dishes/assets/evo_bowl_no_mtl.obj</uri>
+            <uri>package://drake_models/dishes/assets/evo_bowl.gltf</uri>
             <scale>2.0 2.0 2.0</scale>
           </mesh>
         </geometry>
-        <material>
-          <diffuse>0.7 0.7 0.7 0.5</diffuse>
-        </material>
       </visual>
       <collision name="collision">
         <geometry>
