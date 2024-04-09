@@ -20,12 +20,9 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake_models/wsg_50_description/meshes/wsg_body.obj</uri>
+            <uri>package://drake_models/wsg_50_description/meshes/wsg_body.gltf</uri>
           </mesh>
         </geometry>
-        <material>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-        </material>
       </visual>
       <collision name="collision">
         <laser_retro>0</laser_retro>
@@ -102,12 +99,9 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake_models/wsg_50_description/meshes/finger_with_tip.obj</uri>
+            <uri>package://drake_models/wsg_50_description/meshes/finger_with_tip.gltf</uri>
           </mesh>
         </geometry>
-        <material>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-        </material>
       </visual>
       <collision name="left_top">
         <pose> -0.008 0.021 0 0 0 0 </pose>
@@ -213,12 +207,9 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake_models/wsg_50_description/meshes/finger_with_tip.obj</uri>
+            <uri>package://drake_models/wsg_50_description/meshes/finger_with_tip.gltf</uri>
           </mesh>
         </geometry>
-        <material>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-        </material>
       </visual>
       <collision name="right_top">
         <pose> -0.008 0.021 0 0 0 0 </pose>
