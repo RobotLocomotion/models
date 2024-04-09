@@ -4,12 +4,6 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="realsense2_camera">
-  <material name="aluminum">
-    <color rgba="0.5 0.5 0.5 1"/>
-  </material>
-  <material name="plastic">
-    <color rgba="0.1 0.1 0.1 1"/>
-  </material>
   <link name="base_link"/>
   <!-- camera body, with origin at bottom screw mount -->
   <joint name="camera_joint" type="fixed">
@@ -27,9 +21,8 @@
     <visual>
       <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.00987 -0.02 0"/>
       <geometry>
-        <mesh filename="../meshes/d415.obj"/>
+        <mesh filename="package://drake_models/realsense2_description/meshes/d415.gltf"/>
       </geometry>
-      <material name="aluminum"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.02 0"/>
