@@ -23,11 +23,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/base.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/base.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <!-- Base joint -->
     <collision>
@@ -61,11 +58,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/shoulder.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/shoulder.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.0 0.0 -0.02"/>
@@ -91,11 +85,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/upperarm.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/upperarm.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.02 0.0"/>
@@ -139,11 +130,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/forearm.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/forearm.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0.0 0.02 0.005"/>
@@ -181,11 +169,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/wrist1.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/wrist1.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.0 0.105 0.012"/>
@@ -211,11 +196,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/wrist2.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/wrist2.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.001 0.086"/>
@@ -241,11 +223,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://drake_models/ur_description/meshes/wrist3.obj"/>
+        <mesh filename="package://drake_models/ur_description/meshes/wrist3.gltf"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0.0 0.07 0.0"/>

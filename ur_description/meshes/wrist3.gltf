@@ -1,0 +1,237 @@
+{
+  "accessors": [
+    {
+      "name": "wrist3_1_0_positions",
+      "componentType": 5126,
+      "count": 3831,
+      "min": [
+        -0.03150014951825142,
+        -0.03155003860592842,
+        -0.09214994311332703
+      ],
+      "max": [
+        0.03150014951825142,
+        0.03779703378677368,
+        -0.05044994130730629
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "wrist3_1_0_normals",
+      "componentType": 5126,
+      "count": 3831,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "wrist3_1_0_texcoords",
+      "componentType": 5126,
+      "count": 3831,
+      "min": [
+        0.11916910111904144,
+        -0.00007129999721655622
+      ],
+      "max": [
+        0.9534838199615479,
+        0.9909370541572571
+      ],
+      "type": "VEC2",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "wrist3_1_0_indices",
+      "componentType": 5123,
+      "count": 13212,
+      "min": [
+        0
+      ],
+      "max": [
+        3830
+      ],
+      "type": "SCALAR",
+      "bufferView": 3,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "wrist3",
+      "byteLength": 149016,
+      "uri": "wrist3.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 45972,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 45972,
+      "byteOffset": 45972,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 30648,
+      "byteOffset": 91944,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_3",
+      "buffer": 0,
+      "byteLength": 26424,
+      "byteOffset": 122592,
+      "target": 34963
+    }
+  ],
+  "images": [
+		{
+			"mimeType":"image/png",
+			"name":"ur3e_normal",
+			"uri":"ur3e_normal.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"ur3e_color",
+			"uri":"ur3e_color.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"ur3e_occlusion_roughness_metallic",
+			"uri":"ur3e_occlusion_roughness_metallic.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"ur3e_normal.ktx2"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"ur3e_color.ktx2"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"ur3e_occlusion_roughness_metallic.ktx2"
+		}
+  ],
+  "materials": [
+		{
+			"name":"ur3e_material",
+			"normalTexture":{
+				"index":0
+			},
+			"occlusionTexture":{
+				"index":2
+			},
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0.8,
+					0.8,
+					0.8,
+					1
+				],
+				"baseColorTexture":{
+					"index":1
+				},
+				"metallicRoughnessTexture":{
+					"index":2
+				}
+			}
+		}
+  ],
+  "meshes": [
+    {
+      "name": "wrist3_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "wrist3",
+      "mesh": 0
+    }
+  ],
+  "samplers": [
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+		{
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":3
+				}
+			}
+		},
+		{
+			"sampler":0,
+			"source":1,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":4
+				}
+			}
+		},
+		{
+			"sampler":0,
+			"source":2,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":5
+				}
+			}
+		}
+  ],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
+	]
+}

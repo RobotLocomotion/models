@@ -1,0 +1,237 @@
+{
+  "accessors": [
+    {
+      "name": "shoulder_1_0_positions",
+      "componentType": 5126,
+      "count": 10132,
+      "min": [
+        -0.04689967632293701,
+        -0.05705001950263977,
+        -0.06294997781515121
+      ],
+      "max": [
+        0.04689967632293701,
+        0.05803542584180832,
+        0.046944454312324524
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "shoulder_1_0_normals",
+      "componentType": 5126,
+      "count": 10132,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "shoulder_1_0_texcoords",
+      "componentType": 5126,
+      "count": 10132,
+      "min": [
+        0.07593262195587158,
+        0.009442449547350407
+      ],
+      "max": [
+        0.9000205993652344,
+        0.9377176761627197
+      ],
+      "type": "VEC2",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "shoulder_1_0_indices",
+      "componentType": 5123,
+      "count": 49584,
+      "min": [
+        0
+      ],
+      "max": [
+        10131
+      ],
+      "type": "SCALAR",
+      "bufferView": 3,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "shoulder",
+      "byteLength": 423392,
+      "uri": "shoulder.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 121584,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 121584,
+      "byteOffset": 121584,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 81056,
+      "byteOffset": 243168,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_3",
+      "buffer": 0,
+      "byteLength": 99168,
+      "byteOffset": 324224,
+      "target": 34963
+    }
+  ],
+  "images": [
+		{
+			"mimeType":"image/png",
+			"name":"ur3e_normal",
+			"uri":"ur3e_normal.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"ur3e_color",
+			"uri":"ur3e_color.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"ur3e_occlusion_roughness_metallic",
+			"uri":"ur3e_occlusion_roughness_metallic.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"ur3e_normal.ktx2"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"ur3e_color.ktx2"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"ur3e_occlusion_roughness_metallic.ktx2"
+		}
+  ],
+  "materials": [
+		{
+			"name":"ur3e_material",
+			"normalTexture":{
+				"index":0
+			},
+			"occlusionTexture":{
+				"index":2
+			},
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0.8,
+					0.8,
+					0.8,
+					1
+				],
+				"baseColorTexture":{
+					"index":1
+				},
+				"metallicRoughnessTexture":{
+					"index":2
+				}
+			}
+		}
+  ],
+  "meshes": [
+    {
+      "name": "shoulder_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "shoulder",
+      "mesh": 0
+    }
+  ],
+  "samplers": [
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+		{
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":3
+				}
+			}
+		},
+		{
+			"sampler":0,
+			"source":1,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":4
+				}
+			}
+		},
+		{
+			"sampler":0,
+			"source":2,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":5
+				}
+			}
+		}
+  ],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
+	]
+}
