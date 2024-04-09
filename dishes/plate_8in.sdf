@@ -27,7 +27,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>assets/plate_8in_col.obj</uri>
+            <uri>package://drake_models/dishes/assets/plate_8in.gltf</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
@@ -36,7 +36,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>assets/plate_8in_col.obj</uri>
+            <uri>package://drake_models/dishes/assets/plate_8in_col.obj</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
