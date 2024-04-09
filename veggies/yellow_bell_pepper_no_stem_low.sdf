@@ -17,7 +17,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/veggies/assets/yellow_bell_pepper_no_stem_low.obj</uri>
+            <uri>package://drake_models/veggies/assets/yellow_bell_pepper_no_stem_low.gltf</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
