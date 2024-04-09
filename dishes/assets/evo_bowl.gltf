@@ -1,0 +1,167 @@
+{
+  "accessors": [
+    {
+      "name": "polySurface4_1_0_positions",
+      "componentType": 5126,
+      "count": 4118,
+      "min": [
+        -0.07342399656772614,
+        -0.030629999935626984,
+        -0.07343000173568726
+      ],
+      "max": [
+        0.07342399656772614,
+        0.030629999935626984,
+        0.07343000173568726
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "polySurface4_1_0_normals",
+      "componentType": 5126,
+      "count": 4118,
+      "min": [
+        -0.9996827840805054,
+        -1,
+        -0.9996837973594666
+      ],
+      "max": [
+        0.9996827840805054,
+        1,
+        0.9996838569641113
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "polySurface4_1_0_texcoords",
+      "componentType": 5126,
+      "count": 4118,
+      "min": [
+        0.02761800028383732,
+        0.055619001388549805
+      ],
+      "max": [
+        0.9633529782295227,
+        0.965831995010376
+      ],
+      "type": "VEC2",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "polySurface4_1_0_indices",
+      "componentType": 5123,
+      "count": 23730,
+      "min": [
+        0
+      ],
+      "max": [
+        4117
+      ],
+      "type": "SCALAR",
+      "bufferView": 3,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "evo_bowl",
+      "byteLength": 179236,
+      "uri": "evo_bowl.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 49416,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 49416,
+      "byteOffset": 49416,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 32944,
+      "byteOffset": 98832,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_3",
+      "buffer": 0,
+      "byteLength": 47460,
+      "byteOffset": 131776,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.45,
+          0.4,
+          0.35,
+          0.5
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "name": "polySurface4_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "polySurface4",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
