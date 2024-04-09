@@ -1,0 +1,142 @@
+{
+  "accessors": [
+    {
+      "name": "Ellipsoid_Bubble_Geometry-Mesh_0_positions",
+      "componentType": 5126,
+      "count": 92587,
+      "min": [
+        -59.999874114990234,
+        -29.99244499206543,
+        -39.99999237060547
+      ],
+      "max": [
+        60,
+        2.4492931757747437e-15,
+        39.99883270263672
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Ellipsoid_Bubble_Geometry-Mesh_0_normals",
+      "componentType": 5126,
+      "count": 92587,
+      "min": [
+        -0.9266143441200256,
+        -0.9999995827674866,
+        -0.959128201007843
+      ],
+      "max": [
+        0.9257510304450989,
+        1,
+        0.9589322209358215
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Ellipsoid_Bubble_Geometry-Mesh_0_indices",
+      "componentType": 5125,
+      "count": 133920,
+      "min": [
+        0
+      ],
+      "max": [
+        92586
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "ellipsoid_bubble_geometry",
+      "byteLength": 2757768,
+      "uri": "ellipsoid_bubble_geometry.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1111044,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 1111044,
+      "byteOffset": 1111044,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 535680,
+      "byteOffset": 2222088,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "None",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.4,
+          0.4,
+          0.2
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Ellipsoid_Bubble_Geometry-Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Ellipsoid_Bubble_Geometry",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
