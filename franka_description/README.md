@@ -49,13 +49,7 @@ There is collision filtering applied between `(panda_link5, panda_link7)` and
 
 ### Meshes
 
-All files under `./meshes` were converted from the original versions
-in the Franka ROS package, which is available at:
-https://github.com/frankaemika/franka_ros/tree/kinetic-devel/franka_description
-SHA d7cd447344.
-
-The license for these files is the Apache 2.0 license.  (see
-[`LICENSE`](./LICENSE) for more information).
-
-The glTF files were generated from the `.dae` models in the original repository
-(via a time as OBJ files).
+The files under `./meshes` are loosely based on the original DAE versions from
+the Franka ROS package (as of git sha d7cd447344), available at:
+ https://github.com/frankaemika/franka_ros/tree/kinetic-devel/franka_description
+but have since been substantially reworked to improve the appearance.

@@ -13,6 +13,7 @@ The inertial properties for the arm/hand were copied from
 https://github.com/mkrizmancic/franka_gazebo which also uses the
 Apache 2.0 license.
 
-As a result, `urdf/*.urdf` are covered by the Apache 2.0 license. The remaining
-files (README, unit test, BUILD, etc.) are covered by Drake's license terms
+As a result, `urdf/**` and `meshes/**` are covered by the Apache 2.0 license.
+
+The remaining files (i.e., this README) are covered by Drake's license terms
 (see LICENSE.TXT in Drake's root folder).

@@ -12,7 +12,7 @@
       <inertia ixx="0.00782229414331" ixy="-1.56191622996e-05" ixz="-0.00126005738123" iyy="0.0109027971813" iyz="1.08233858202e-05" izz="0.0102355503949"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link0.gltf"/>
       </geometry>
@@ -109,7 +109,7 @@
       <inertia ixx="0.0180416958283" ixy="0.0" ixz="0.0" iyy="0.0159136071891" iyz="0.0046758424612" izz="0.00620690827127"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link1.gltf"/>
       </geometry>
@@ -165,7 +165,7 @@
       <inertia ixx="0.0182856182281" ixy="0.0" ixz="0.0" iyy="0.00621358421175" iyz="-0.00472844221905" izz="0.0161514346309"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link2.gltf"/>
       </geometry>
@@ -221,7 +221,7 @@
       <inertia ixx="0.00771376630908" ixy="-0.00248490625138" ixz="-0.00332147581033" iyy="0.00989108008727" iyz="-0.00217796151484" izz="0.00811723558464"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link3.gltf"/>
       </geometry>
@@ -271,7 +271,7 @@
       <inertia ixx="0.00799663881132" ixy="0.00347095570217" ixz="-0.00241222942995" iyy="0.00825390705278" iyz="0.00235774044121" izz="0.0102515004345"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link4.gltf"/>
       </geometry>
@@ -333,7 +333,7 @@
       <inertia ixx="0.030371374513" ixy="6.50283587108e-07" ixz="-1.05129179916e-05" iyy="0.0288752887402" iyz="-0.00775653445787" izz="0.00444134056164"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link5.gltf"/>
       </geometry>
@@ -425,7 +425,7 @@
       <inertia ixx="0.00303336450376" ixy="-0.000437276865508" ixz="0.000629257294877" iyy="0.00404479911567" iyz="0.000130472021025" izz="0.00558234286039"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link6.gltf"/>
       </geometry>
@@ -475,7 +475,7 @@
       <inertia ixx="0.000888868887021" ixy="-0.00012239074652" ixz="3.98699829666e-05" iyy="0.000888001373233" iyz="-9.33825115206e-05" izz="0.0007176834609"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/link7.gltf"/>
       </geometry>
