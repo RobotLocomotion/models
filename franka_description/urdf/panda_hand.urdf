@@ -7,7 +7,7 @@
       <inertia ixx="0.00278560230025" ixy="0.0" ixz="0.0" iyy="0.000400033405336" iyz="0.0" izz="0.00256378041832"/>
     </inertial>
     <visual>
-      <origin rpy="1.57079632679 0 0"/>
+      <origin rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://drake_models/franka_description/meshes/visual/hand.gltf"/>
       </geometry>
