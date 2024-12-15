@@ -175,4 +175,10 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
+    <drake:collision_filter_group name="group_hand">
+    <drake:member link="panda_hand"/>
+    <drake:member link="panda_leftfinger"/>
+    <drake:member link="panda_rightfinger"/>
+    <drake:ignored_collision_filter_group name="group_hand"/>
+  </drake:collision_filter_group>
 </robot>
