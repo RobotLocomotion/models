@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <robot name="table_top" xmlns:drake="http://drake.mit.edu">
   <link name="table_top_link">
+    <inertial>
+      <inertia ixx="2.5062" ixy="0" ixz="0" iyy="0.90625" iyz="0" izz="3.4"/>
+      <mass value="30"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </inertial>
     <visual name="visual">
       <geometry>
         <box size="0.6 1.0 0.05"/>
