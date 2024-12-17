@@ -207,6 +207,21 @@
       </geometry>
     </collision>
   </link>
+  <!-- Extra collision link added to match the Panda controller internal model. -->
+  <link name="panda_link2_extra">
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint to fix extra link to link 2. -->
+  <joint name="panda_joint2_extra" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="panda_link2"/>
+    <child link="panda_link2_extra"/>
+  </joint>
   <joint name="panda_joint2" type="revolute">
     <origin rpy="-1.57079632679 0 0" xyz="0 0 0"/>
     <parent link="panda_link1"/>
@@ -411,6 +426,21 @@
       </geometry>
     </collision>
   </link>
+  <!-- Extra collision link added to match the Panda controller internal model. -->
+  <link name="panda_link5_extra">
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.06 -0.125"/>
+      <geometry>
+        <sphere radius="0.075"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint to fix extra link to link 5. -->
+  <joint name="panda_joint5_extra" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="panda_link5"/>
+    <child link="panda_link5_extra"/>
+  </joint>
   <joint name="panda_joint5" type="revolute">
     <origin rpy="-1.57079632679 0 0" xyz="-0.0825 0.384 0"/>
     <parent link="panda_link4"/>
@@ -723,14 +753,41 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <drake:collision_filter_group name="group_link57">
-    <drake:member link="panda_link5"/>
-    <drake:member link="panda_link7"/>
-    <drake:ignored_collision_filter_group name="group_link57"/>
+  <drake:collision_filter_group name="group_link012">
+    <drake:member link="panda_link0"/>
+    <drake:member link="panda_link1"/>
+    <drake:member link="panda_link2"/>
+    <drake:member link="panda_link2_extra"/>
+    <drake:ignored_collision_filter_group name="group_link012"/>
   </drake:collision_filter_group>
-  <drake:collision_filter_group name="group_link68">
+  <drake:collision_filter_group name="group_link23">
+    <drake:member link="panda_link2"/>
+    <drake:member link="panda_link2_extra"/>
+    <drake:member link="panda_link3"/>
+    <drake:ignored_collision_filter_group name="group_link23"/>
+  </drake:collision_filter_group>
+  <drake:collision_filter_group name="group_link45">
+    <drake:member link="panda_link4"/>
+    <drake:member link="panda_link5"/>
+    <drake:member link="panda_link5_extra"/>
+    <drake:ignored_collision_filter_group name="group_link45"/>
+  </drake:collision_filter_group>
+  <drake:collision_filter_group name="group_link5678">
+    <drake:member link="panda_link5"/>
+    <drake:member link="panda_link5_extra"/>
     <drake:member link="panda_link6"/>
+    <drake:member link="panda_link7"/>
     <drake:member link="panda_link8"/>
-    <drake:ignored_collision_filter_group name="group_link68"/>
+    <drake:ignored_collision_filter_group name="group_link5678"/>
+  </drake:collision_filter_group>
+  <drake:collision_filter_group name="group_wrist_hand">
+    <drake:member link="panda_link5"/>
+    <drake:member link="panda_link6"/>
+    <drake:member link="panda_link7"/>
+    <drake:member link="panda_link8"/>
+    <drake:member link="panda_hand"/>
+    <drake:member link="panda_leftfinger"/>
+    <drake:member link="panda_rightfinger"/>
+    <drake:ignored_collision_filter_group name="group_wrist_hand"/>
   </drake:collision_filter_group>
 </robot>
