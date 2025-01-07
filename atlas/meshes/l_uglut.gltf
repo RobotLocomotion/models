@@ -1,115 +1,189 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":238,
-			"min":[
-				-0.03323400020599365,
-				-0.04091800004243851,
-				-0.07182499766349792
-			],
-			"max":[
-				0.04914499819278717,
-				0.12751099467277527,
-				0.02042200043797493
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":1458,
-			"min":[
-				0
-			],
-			"max":[
-				237
-			],
-			"type":"SCALAR",
-			"bufferView":1,
-			"byteOffset":0
-		}
-	],
-	"asset":{
-		"generator":"obj2gltf",
-		"version":"2.0"
-	},
-	"buffers":[
-		{
-			"name":"l_uglut",
-			"byteLength":5772,
-			"uri":"l_uglut.bin"
-		}
-	],
-	"bufferViews":[
-		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":2856,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":2916,
-			"byteOffset":2856,
-			"target":34963
-		}
-	],
-	"materials":[
-		{
-			"name":"default",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.5,
-					0.5,
-					0.5,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":1
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
-		}
-	],
-	"meshes":[
-		{
-			"name":"Node-Mesh",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0
-					},
-					"indices":1,
-					"material":0,
-					"mode":4
-				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
-			]
-		}
-	]
+  "accessors": [
+    {
+      "name": "Node-Mesh_0_positions",
+      "componentType": 5126,
+      "count": 1458,
+      "min": [
+        -0.03319999948143959,
+        -0.04089999943971634,
+        -0.07180000096559525
+      ],
+      "max": [
+        0.04910000041127205,
+        0.1274999976158142,
+        0.020400000736117363
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Node-Mesh_0_normals",
+      "componentType": 5126,
+      "count": 1458,
+      "min": [
+        -1,
+        -0.9848083257675171,
+        -0.9848077893257141
+      ],
+      "max": [
+        1,
+        0.9843393564224243,
+        0.9848076105117798
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Node-Mesh_0_texcoords",
+      "componentType": 5126,
+      "count": 1458,
+      "min": [
+        0.00623599998652935,
+        0.24535399675369263
+      ],
+      "max": [
+        0.703004002571106,
+        0.7159460186958313
+      ],
+      "type": "VEC2",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Node-Mesh_0_indices",
+      "componentType": 5123,
+      "count": 1458,
+      "min": [
+        0
+      ],
+      "max": [
+        1457
+      ],
+      "type": "SCALAR",
+      "bufferView": 3,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "l_uglut",
+      "byteLength": 49572,
+      "uri": "l_uglut.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 17496,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 17496,
+      "byteOffset": 17496,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 11664,
+      "byteOffset": 34992,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_3",
+      "buffer": 0,
+      "byteLength": 2916,
+      "byteOffset": 46656,
+      "target": 34963
+    }
+  ],
+  "images": [
+    {
+      "name": "extremities_diffuse_unplugged_mit",
+      "uri": "extremities_diffuse_unplugged_mit.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "name": "drc_extremities_diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.998
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Node-Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node",
+      "mesh": 0
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "extremities_diffuse_unplugged_mit",
+      "sampler": 0,
+      "source": 0
+    }
+  ]
 }

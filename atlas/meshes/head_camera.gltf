@@ -1,142 +1,189 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":480,
-			"min":[
-				-0.07164300233125687,
-				0.04091800004243851,
-				-0.06031300127506256
-			],
-			"max":[
-				0.017256999388337135,
-				0.14191800355911255,
-				0.05228700116276741
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":480,
-			"min":[
-				-1,
-				-0.9489975571632385,
-				-0.9941822290420532
-			],
-			"max":[
-				1,
-				1,
-				0.9943211674690247
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":768,
-			"min":[
-				0
-			],
-			"max":[
-				479
-			],
-			"type":"SCALAR",
-			"bufferView":2,
-			"byteOffset":0
-		}
-	],
-	"asset":{
-		"generator":"obj2gltf",
-		"version":"2.0"
-	},
-	"buffers":[
-		{
-			"name":"head_camera",
-			"byteLength":13056,
-			"uri":"head_camera.bin"
-		}
-	],
-	"bufferViews":[
-		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":5760,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":5760,
-			"byteOffset":5760,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":1536,
-			"byteOffset":11520,
-			"target":34963
-		}
-	],
-	"materials":[
-		{
-			"name":"default",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.5,
-					0.5,
-					0.5,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":1
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
-		}
-	],
-	"meshes":[
-		{
-			"name":"Node-Mesh",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1
-					},
-					"indices":2,
-					"material":0,
-					"mode":4
-				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
-			]
-		}
-	]
+  "accessors": [
+    {
+      "name": "Node-Mesh_0_positions",
+      "componentType": 5126,
+      "count": 828,
+      "min": [
+        -0.03370000049471855,
+        0.04050000011920929,
+        -0.00930000003427267
+      ],
+      "max": [
+        0.049300000071525574,
+        0.14149999618530273,
+        0.08429999649524689
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Node-Mesh_0_normals",
+      "componentType": 5126,
+      "count": 828,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        0.9954481720924377,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Node-Mesh_0_texcoords",
+      "componentType": 5126,
+      "count": 828,
+      "min": [
+        0.021929999813437462,
+        0.0220940001308918
+      ],
+      "max": [
+        0.44257399439811707,
+        0.496612012386322
+      ],
+      "type": "VEC2",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Node-Mesh_0_indices",
+      "componentType": 5123,
+      "count": 828,
+      "min": [
+        0
+      ],
+      "max": [
+        827
+      ],
+      "type": "SCALAR",
+      "bufferView": 3,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "head_camera",
+      "byteLength": 28152,
+      "uri": "head_camera.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 9936,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 9936,
+      "byteOffset": 9936,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 6624,
+      "byteOffset": 19872,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_3",
+      "buffer": 0,
+      "byteLength": 1656,
+      "byteOffset": 26496,
+      "target": 34963
+    }
+  ],
+  "images": [
+    {
+      "name": "drc_torso_head_diffuse",
+      "uri": "drc_torso_head_diffuse.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "name": "drc_torso_head_diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.998
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Node-Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node",
+      "mesh": 0
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "drc_torso_head_diffuse",
+      "sampler": 0,
+      "source": 0
+    }
+  ]
 }
