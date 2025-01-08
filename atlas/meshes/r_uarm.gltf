@@ -1,155 +1,38 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":1638,
-			"min":[
-				-0.08420000225305557,
-				-0.06949999928474426,
-				-0.011599999852478504
-			],
-			"max":[
-				0.0632999986410141,
-				0.05660000070929527,
-				0.16529999673366547
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":1638,
-			"min":[
-				-0.9966297745704651,
-				-0.9998578429222107,
-				-0.9390634894371033
-			],
-			"max":[
-				0.9903534650802612,
-				1,
-				0.8965520858764648
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":1638,
-			"min":[
-				0.007317000068724155,
-				0.13012899458408356
-			],
-			"max":[
-				0.998416006565094,
-				0.9979130029678345
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":1638,
-			"min":[
-				0
-			],
-			"max":[
-				1637
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
 	"asset":{
-		"generator":"obj2gltf",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"buffers":[
+	"scene":0,
+	"scenes":[
 		{
-			"name":"r_uarm",
-			"byteLength":55692,
-			"uri":"r_uarm.bin"
+			"name":"Scene",
+			"nodes":[
+				0
+			]
 		}
 	],
-	"bufferViews":[
+	"nodes":[
 		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":19656,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":19656,
-			"byteOffset":19656,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":13104,
-			"byteOffset":39312,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":3276,
-			"byteOffset":52416,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"extremities_diffuse_unplugged_mit",
-			"uri":"extremities_diffuse_unplugged_mit.png",
-			"mimeType":"image/png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+			"mesh":0,
+			"name":"Node"
 		}
 	],
 	"materials":[
 		{
-			"name":"drc_extremities_diffuse",
+			"name":"drc_extremities_diffuse.014",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
 				"metallicFactor":0,
-				"roughnessFactor":0.998
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
+				"roughnessFactor":0.9980000257492065
+			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Node-Mesh",
+			"name":"Node-Mesh.020",
 			"primitives":[
 				{
 					"attributes":{
@@ -158,35 +41,13 @@
 						"TEXCOORD_0":2
 					},
 					"indices":3,
-					"material":0,
-					"mode":4
+					"material":0
 				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
 			]
 		}
 	],
 	"textures":[
 		{
-			"name":"extremities_diffuse_unplugged_mit",
 			"sampler":0,
 			"source":0,
 			"extensions":{
@@ -194,6 +55,91 @@
 					"source":1
 				}
 			}
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"extremities_diffuse_unplugged_mit",
+			"uri":"extremities_diffuse_unplugged_mit.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+		}
+	],
+	"accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":653,
+			"max":[
+				0.0632999986410141,
+				0.05660000070929527,
+				0.16529999673366547
+			],
+			"min":[
+				-0.08420000225305557,
+				-0.06949999928474426,
+				-0.011599999852478504
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":653,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":653,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":1638,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":7836,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":7836,
+			"byteOffset":7836,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":5224,
+			"byteOffset":15672,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":3276,
+			"byteOffset":20896,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":24172,
+			"uri":"r_uarm.bin"
 		}
 	],
 	"extensionsUsed":[

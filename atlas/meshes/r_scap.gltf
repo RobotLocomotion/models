@@ -1,155 +1,38 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":2013,
-			"min":[
-				-0.08760000020265579,
-				-0.06949999928474426,
-				-0.052400000393390656
-			],
-			"max":[
-				0.08420000225305557,
-				0.058400001376867294,
-				0.2231999933719635
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":2013,
-			"min":[
-				-1,
-				-0.9967126250267029,
-				-1
-			],
-			"max":[
-				1,
-				0.999999463558197,
-				0.9967132806777954
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":2013,
-			"min":[
-				0.1689089983701706,
-				0.004497999791055918
-			],
-			"max":[
-				0.9972540140151978,
-				0.9935219883918762
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":2013,
-			"min":[
-				0
-			],
-			"max":[
-				2012
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
 	"asset":{
-		"generator":"obj2gltf",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"buffers":[
+	"scene":0,
+	"scenes":[
 		{
-			"name":"r_scap",
-			"byteLength":68444,
-			"uri":"r_scap.bin"
+			"name":"Scene",
+			"nodes":[
+				0
+			]
 		}
 	],
-	"bufferViews":[
+	"nodes":[
 		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":24156,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":24156,
-			"byteOffset":24156,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":16104,
-			"byteOffset":48312,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":4028,
-			"byteOffset":64416,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"extremities_diffuse_unplugged_mit",
-			"uri":"extremities_diffuse_unplugged_mit.png",
-			"mimeType":"image/png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+			"mesh":0,
+			"name":"Node"
 		}
 	],
 	"materials":[
 		{
-			"name":"drc_extremities_diffuse",
+			"name":"drc_extremities_diffuse.012",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
 				"metallicFactor":0,
-				"roughnessFactor":0.998
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
+				"roughnessFactor":0.9980000257492065
+			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Node-Mesh",
+			"name":"Node-Mesh.018",
 			"primitives":[
 				{
 					"attributes":{
@@ -158,35 +41,13 @@
 						"TEXCOORD_0":2
 					},
 					"indices":3,
-					"material":0,
-					"mode":4
+					"material":0
 				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
 			]
 		}
 	],
 	"textures":[
 		{
-			"name":"extremities_diffuse_unplugged_mit",
 			"sampler":0,
 			"source":0,
 			"extensions":{
@@ -194,6 +55,91 @@
 					"source":1
 				}
 			}
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"extremities_diffuse_unplugged_mit",
+			"uri":"extremities_diffuse_unplugged_mit.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+		}
+	],
+	"accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":822,
+			"max":[
+				0.08420000225305557,
+				0.058400001376867294,
+				0.2231999933719635
+			],
+			"min":[
+				-0.08760000020265579,
+				-0.06949999928474426,
+				-0.052400000393390656
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":822,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":822,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":2004,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":9864,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":9864,
+			"byteOffset":9864,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":6576,
+			"byteOffset":19728,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":4008,
+			"byteOffset":26304,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":30312,
+			"uri":"r_scap.bin"
 		}
 	],
 	"extensionsUsed":[

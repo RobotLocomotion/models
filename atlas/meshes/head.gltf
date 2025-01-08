@@ -1,125 +1,21 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":2805,
-			"min":[
-				-0.11590000241994858,
-				-0.03220000118017197,
-				-0.0851999968290329
-			],
-			"max":[
-				0.052000001072883606,
-				0.14429999887943268,
-				0.14980000257492065
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":2805,
-			"min":[
-				-1,
-				-1,
-				-1
-			],
-			"max":[
-				1,
-				1,
-				1
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":2805,
-			"min":[
-				0.02010899968445301,
-				0.02100900001823902
-			],
-			"max":[
-				0.9789860248565674,
-				0.7352330088615417
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":2805,
-			"min":[
-				0
-			],
-			"max":[
-				2804
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
 	"asset":{
-		"generator":"obj2gltf",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"buffers":[
+	"scene":0,
+	"scenes":[
 		{
-			"name":"head",
-			"byteLength":95372,
-			"uri":"head.bin"
+			"name":"Scene",
+			"nodes":[
+				0
+			]
 		}
 	],
-	"bufferViews":[
+	"nodes":[
 		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":33660,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":33660,
-			"byteOffset":33660,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":22440,
-			"byteOffset":67320,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":5612,
-			"byteOffset":89760,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"drc_torso_head_diffuse",
-			"uri":"drc_torso_head_diffuse.png",
-			"mimeType":"image/png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"drc_torso_head_diffuse.ktx2"
+			"mesh":0,
+			"name":"Node"
 		}
 	],
 	"materials":[
@@ -129,22 +25,9 @@
 				"baseColorTexture":{
 					"index":0
 				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
 				"metallicFactor":0,
-				"roughnessFactor":0.998
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
+				"roughnessFactor":0.9980000257492065
+			}
 		}
 	],
 	"meshes":[
@@ -158,35 +41,13 @@
 						"TEXCOORD_0":2
 					},
 					"indices":3,
-					"material":0,
-					"mode":4
+					"material":0
 				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
 			]
 		}
 	],
 	"textures":[
 		{
-			"name":"drc_torso_head_diffuse",
 			"sampler":0,
 			"source":0,
 			"extensions":{
@@ -194,6 +55,91 @@
 					"source":1
 				}
 			}
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"drc_torso_head_diffuse",
+			"uri":"drc_torso_head_diffuse.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"drc_torso_head_diffuse.ktx2"
+		}
+	],
+	"accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":973,
+			"max":[
+				0.052000001072883606,
+				0.14429999887943268,
+				0.14980000257492065
+			],
+			"min":[
+				-0.11590000241994858,
+				-0.03220000118017197,
+				-0.0851999968290329
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":973,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":973,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":2805,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":11676,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":11676,
+			"byteOffset":11676,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":7784,
+			"byteOffset":23352,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":5610,
+			"byteOffset":31136,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":36748,
+			"uri":"head.bin"
 		}
 	],
 	"extensionsUsed":[

@@ -1,155 +1,38 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":144,
-			"min":[
-				-0.01640000008046627,
-				-0.011500000022351742,
-				-0.01590000092983246
-			],
-			"max":[
-				0.016200000420212746,
-				0.011300000362098217,
-				0.016699999570846558
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":144,
-			"min":[
-				-0.706011176109314,
-				-0.7639694213867188,
-				-0.7836162447929382
-			],
-			"max":[
-				0.7836139798164368,
-				0.7639690637588501,
-				0.7060147523880005
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":144,
-			"min":[
-				0.4341549873352051,
-				0.17899100482463837
-			],
-			"max":[
-				0.668205976486206,
-				0.7171220183372498
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":144,
-			"min":[
-				0
-			],
-			"max":[
-				143
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
 	"asset":{
-		"generator":"obj2gltf",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"buffers":[
+	"scene":0,
+	"scenes":[
 		{
-			"name":"r_talus",
-			"byteLength":4896,
-			"uri":"r_talus.bin"
+			"name":"Scene",
+			"nodes":[
+				0
+			]
 		}
 	],
-	"bufferViews":[
+	"nodes":[
 		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":1728,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":1728,
-			"byteOffset":1728,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":1152,
-			"byteOffset":3456,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":288,
-			"byteOffset":4608,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"extremities_diffuse_unplugged_mit",
-			"uri":"extremities_diffuse_unplugged_mit.png",
-			"mimeType":"image/png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+			"mesh":0,
+			"name":"Node"
 		}
 	],
 	"materials":[
 		{
-			"name":"drc_extremities_diffuse",
+			"name":"drc_extremities_diffuse.013",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
 				"metallicFactor":0,
-				"roughnessFactor":0.998
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
+				"roughnessFactor":0.9980000257492065
+			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Node-Mesh",
+			"name":"Node-Mesh.019",
 			"primitives":[
 				{
 					"attributes":{
@@ -158,35 +41,13 @@
 						"TEXCOORD_0":2
 					},
 					"indices":3,
-					"material":0,
-					"mode":4
+					"material":0
 				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
 			]
 		}
 	],
 	"textures":[
 		{
-			"name":"extremities_diffuse_unplugged_mit",
 			"sampler":0,
 			"source":0,
 			"extensions":{
@@ -194,6 +55,91 @@
 					"source":1
 				}
 			}
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"extremities_diffuse_unplugged_mit",
+			"uri":"extremities_diffuse_unplugged_mit.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+		}
+	],
+	"accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":60,
+			"max":[
+				0.016200000420212746,
+				0.011300000362098217,
+				0.016699999570846558
+			],
+			"min":[
+				-0.01640000008046627,
+				-0.011500000022351742,
+				-0.01590000092983246
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":60,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":60,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":144,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":720,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":720,
+			"byteOffset":720,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":480,
+			"byteOffset":1440,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":288,
+			"byteOffset":1920,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":2208,
+			"uri":"r_talus.bin"
 		}
 	],
 	"extensionsUsed":[

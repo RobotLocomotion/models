@@ -1,155 +1,38 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":4482,
-			"min":[
-				-0.04190000146627426,
-				-0.4300999939441681,
-				-0.05810000002384186
-			],
-			"max":[
-				0.09489999711513519,
-				0.022099999710917473,
-				0.05790000036358833
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":4482,
-			"min":[
-				-0.9999997019767761,
-				-1,
-				-0.9999697804450989
-			],
-			"max":[
-				1,
-				0.9983831644058228,
-				0.9999698400497437
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":4482,
-			"min":[
-				0.021913999691605568,
-				0.006175999995321035
-			],
-			"max":[
-				0.7095249891281128,
-				0.718047022819519
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":4482,
-			"min":[
-				0
-			],
-			"max":[
-				4481
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
 	"asset":{
-		"generator":"obj2gltf",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"buffers":[
+	"scene":0,
+	"scenes":[
 		{
-			"name":"l_lleg",
-			"byteLength":152388,
-			"uri":"l_lleg.bin"
+			"name":"Scene",
+			"nodes":[
+				0
+			]
 		}
 	],
-	"bufferViews":[
+	"nodes":[
 		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":53784,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":53784,
-			"byteOffset":53784,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":35856,
-			"byteOffset":107568,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":8964,
-			"byteOffset":143424,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"extremities_diffuse_unplugged_mit",
-			"uri":"extremities_diffuse_unplugged_mit.png",
-			"mimeType":"image/png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+			"mesh":0,
+			"name":"Node"
 		}
 	],
 	"materials":[
 		{
-			"name":"drc_extremities_diffuse",
+			"name":"drc_extremities_diffuse.002",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
 				"metallicFactor":0,
-				"roughnessFactor":0.998
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
+				"roughnessFactor":0.9980000257492065
+			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Node-Mesh",
+			"name":"Node-Mesh.004",
 			"primitives":[
 				{
 					"attributes":{
@@ -158,35 +41,13 @@
 						"TEXCOORD_0":2
 					},
 					"indices":3,
-					"material":0,
-					"mode":4
+					"material":0
 				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
 			]
 		}
 	],
 	"textures":[
 		{
-			"name":"extremities_diffuse_unplugged_mit",
 			"sampler":0,
 			"source":0,
 			"extensions":{
@@ -194,6 +55,91 @@
 					"source":1
 				}
 			}
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"extremities_diffuse_unplugged_mit",
+			"uri":"extremities_diffuse_unplugged_mit.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+		}
+	],
+	"accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":1563,
+			"max":[
+				0.09489999711513519,
+				0.022099999710917473,
+				0.05790000036358833
+			],
+			"min":[
+				-0.04190000146627426,
+				-0.4300999939441681,
+				-0.05810000002384186
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":1563,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":1563,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":4482,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":18756,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":18756,
+			"byteOffset":18756,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":12504,
+			"byteOffset":37512,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":8964,
+			"byteOffset":50016,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":58980,
+			"uri":"l_lleg.bin"
 		}
 	],
 	"extensionsUsed":[
