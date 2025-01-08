@@ -1,189 +1,202 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 252,
-      "min": [
-        -0.0674000009894371,
-        -0.0203000009059906,
-        -0.016899999231100082
-      ],
-      "max": [
-        0.016300000250339508,
-        0.08089999854564667,
-        0.01679999940097332
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 252,
-      "min": [
-        -0.7440260052680969,
-        -0.7483376860618591,
-        -0.8124120235443115
-      ],
-      "max": [
-        0.7907537817955017,
-        0.7845829129219055,
-        0.8107262253761292
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_texcoords",
-      "componentType": 5126,
-      "count": 252,
-      "min": [
-        0.07691100239753723,
-        0.00899800006300211
-      ],
-      "max": [
-        0.42487600445747375,
-        0.8453549742698669
-      ],
-      "type": "VEC2",
-      "bufferView": 2,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 252,
-      "min": [
-        0
-      ],
-      "max": [
-        251
-      ],
-      "type": "SCALAR",
-      "bufferView": 3,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "mtorso",
-      "byteLength": 8568,
-      "uri": "mtorso.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 3024,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 3024,
-      "byteOffset": 3024,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 2016,
-      "byteOffset": 6048,
-      "byteStride": 8,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_3",
-      "buffer": 0,
-      "byteLength": 504,
-      "byteOffset": 8064,
-      "target": 34963
-    }
-  ],
-  "images": [
-    {
-      "name": "torso_diffuse_unplugged_mit",
-      "uri": "torso_diffuse_unplugged_mit.png"
-    }
-  ],
-  "materials": [
-    {
-      "name": "torso_diffuse",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.998
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "samplers": [
-    {
-      "wrapS": 10497,
-      "wrapT": 10497
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "name": "torso_diffuse_unplugged_mit",
-      "sampler": 0,
-      "source": 0
-    }
-  ]
+	"accessors":[
+		{
+			"name":"Node-Mesh_0_positions",
+			"componentType":5126,
+			"count":252,
+			"min":[
+				-0.0674000009894371,
+				-0.0203000009059906,
+				-0.016899999231100082
+			],
+			"max":[
+				0.016300000250339508,
+				0.08089999854564667,
+				0.01679999940097332
+			],
+			"type":"VEC3",
+			"bufferView":0,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_normals",
+			"componentType":5126,
+			"count":252,
+			"min":[
+				-0.7440260052680969,
+				-0.7483376860618591,
+				-0.8124120235443115
+			],
+			"max":[
+				0.7907537817955017,
+				0.7845829129219055,
+				0.8107262253761292
+			],
+			"type":"VEC3",
+			"bufferView":1,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_texcoords",
+			"componentType":5126,
+			"count":252,
+			"min":[
+				0.07691100239753723,
+				0.00899800006300211
+			],
+			"max":[
+				0.42487600445747375,
+				0.8453549742698669
+			],
+			"type":"VEC2",
+			"bufferView":2,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_indices",
+			"componentType":5123,
+			"count":252,
+			"min":[
+				0
+			],
+			"max":[
+				251
+			],
+			"type":"SCALAR",
+			"bufferView":3,
+			"byteOffset":0
+		}
+	],
+	"asset":{
+		"generator":"obj2gltf",
+		"version":"2.0"
+	},
+	"buffers":[
+		{
+			"name":"mtorso",
+			"byteLength":8568,
+			"uri":"mtorso.bin"
+		}
+	],
+	"bufferViews":[
+		{
+			"name":"bufferView_0",
+			"buffer":0,
+			"byteLength":3024,
+			"byteOffset":0,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_1",
+			"buffer":0,
+			"byteLength":3024,
+			"byteOffset":3024,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_2",
+			"buffer":0,
+			"byteLength":2016,
+			"byteOffset":6048,
+			"byteStride":8,
+			"target":34962
+		},
+		{
+			"name":"bufferView_3",
+			"buffer":0,
+			"byteLength":504,
+			"byteOffset":8064,
+			"target":34963
+		}
+	],
+	"images":[
+		{
+			"name":"torso_diffuse_unplugged_mit",
+			"uri":"torso_diffuse_unplugged_mit.png",
+			"mimeType":"image/png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"torso_diffuse_unplugged_mit.ktx2"
+		}
+	],
+	"materials":[
+		{
+			"name":"torso_diffuse",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":0
+				},
+				"baseColorFactor":[
+					1,
+					1,
+					1,
+					1
+				],
+				"metallicFactor":0,
+				"roughnessFactor":0.998
+			},
+			"emissiveFactor":[
+				0,
+				0,
+				0
+			],
+			"alphaMode":"OPAQUE",
+			"doubleSided":false
+		}
+	],
+	"meshes":[
+		{
+			"name":"Node-Mesh",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":0,
+						"NORMAL":1,
+						"TEXCOORD_0":2
+					},
+					"indices":3,
+					"material":0,
+					"mode":4
+				}
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"Node",
+			"mesh":0
+		}
+	],
+	"samplers":[
+		{
+			"wrapS":10497,
+			"wrapT":10497
+		}
+	],
+	"scene":0,
+	"scenes":[
+		{
+			"nodes":[
+				0
+			]
+		}
+	],
+	"textures":[
+		{
+			"name":"torso_diffuse_unplugged_mit",
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":1
+				}
+			}
+		}
+	],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
+	]
 }

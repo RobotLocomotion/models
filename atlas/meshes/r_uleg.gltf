@@ -1,189 +1,202 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 7392,
-      "min": [
-        -0.12780000269412994,
-        -0.3928999900817871,
-        -0.0737999975681305
-      ],
-      "max": [
-        0.08299999684095383,
-        0.01979999989271164,
-        0.07429999858140945
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 7392,
-      "min": [
-        -0.999988853931427,
-        -0.9984971880912781,
-        -0.9999999403953552
-      ],
-      "max": [
-        0.9999351501464844,
-        0.9961117506027222,
-        0.9999999403953552
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_texcoords",
-      "componentType": 5126,
-      "count": 7392,
-      "min": [
-        0.0066019999794662,
-        0.008661000058054924
-      ],
-      "max": [
-        0.9913650155067444,
-        0.9902560114860535
-      ],
-      "type": "VEC2",
-      "bufferView": 2,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 7392,
-      "min": [
-        0
-      ],
-      "max": [
-        7391
-      ],
-      "type": "SCALAR",
-      "bufferView": 3,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "r_uleg",
-      "byteLength": 251328,
-      "uri": "r_uleg.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 88704,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 88704,
-      "byteOffset": 88704,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 59136,
-      "byteOffset": 177408,
-      "byteStride": 8,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_3",
-      "buffer": 0,
-      "byteLength": 14784,
-      "byteOffset": 236544,
-      "target": 34963
-    }
-  ],
-  "images": [
-    {
-      "name": "right_leg_diffuse_unplugged",
-      "uri": "right_leg_diffuse_unplugged.png"
-    }
-  ],
-  "materials": [
-    {
-      "name": "_08 - Default",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.998
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "samplers": [
-    {
-      "wrapS": 10497,
-      "wrapT": 10497
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "name": "right_leg_diffuse_unplugged",
-      "sampler": 0,
-      "source": 0
-    }
-  ]
+	"accessors":[
+		{
+			"name":"Node-Mesh_0_positions",
+			"componentType":5126,
+			"count":7392,
+			"min":[
+				-0.12780000269412994,
+				-0.3928999900817871,
+				-0.0737999975681305
+			],
+			"max":[
+				0.08299999684095383,
+				0.01979999989271164,
+				0.07429999858140945
+			],
+			"type":"VEC3",
+			"bufferView":0,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_normals",
+			"componentType":5126,
+			"count":7392,
+			"min":[
+				-0.999988853931427,
+				-0.9984971880912781,
+				-0.9999999403953552
+			],
+			"max":[
+				0.9999351501464844,
+				0.9961117506027222,
+				0.9999999403953552
+			],
+			"type":"VEC3",
+			"bufferView":1,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_texcoords",
+			"componentType":5126,
+			"count":7392,
+			"min":[
+				0.0066019999794662,
+				0.008661000058054924
+			],
+			"max":[
+				0.9913650155067444,
+				0.9902560114860535
+			],
+			"type":"VEC2",
+			"bufferView":2,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_indices",
+			"componentType":5123,
+			"count":7392,
+			"min":[
+				0
+			],
+			"max":[
+				7391
+			],
+			"type":"SCALAR",
+			"bufferView":3,
+			"byteOffset":0
+		}
+	],
+	"asset":{
+		"generator":"obj2gltf",
+		"version":"2.0"
+	},
+	"buffers":[
+		{
+			"name":"r_uleg",
+			"byteLength":251328,
+			"uri":"r_uleg.bin"
+		}
+	],
+	"bufferViews":[
+		{
+			"name":"bufferView_0",
+			"buffer":0,
+			"byteLength":88704,
+			"byteOffset":0,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_1",
+			"buffer":0,
+			"byteLength":88704,
+			"byteOffset":88704,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_2",
+			"buffer":0,
+			"byteLength":59136,
+			"byteOffset":177408,
+			"byteStride":8,
+			"target":34962
+		},
+		{
+			"name":"bufferView_3",
+			"buffer":0,
+			"byteLength":14784,
+			"byteOffset":236544,
+			"target":34963
+		}
+	],
+	"images":[
+		{
+			"name":"right_leg_diffuse_unplugged",
+			"uri":"right_leg_diffuse_unplugged.png",
+			"mimeType":"image/png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"right_leg_diffuse_unplugged.ktx2"
+		}
+	],
+	"materials":[
+		{
+			"name":"_08 - Default",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":0
+				},
+				"baseColorFactor":[
+					1,
+					1,
+					1,
+					1
+				],
+				"metallicFactor":0,
+				"roughnessFactor":0.998
+			},
+			"emissiveFactor":[
+				0,
+				0,
+				0
+			],
+			"alphaMode":"OPAQUE",
+			"doubleSided":false
+		}
+	],
+	"meshes":[
+		{
+			"name":"Node-Mesh",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":0,
+						"NORMAL":1,
+						"TEXCOORD_0":2
+					},
+					"indices":3,
+					"material":0,
+					"mode":4
+				}
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"Node",
+			"mesh":0
+		}
+	],
+	"samplers":[
+		{
+			"wrapS":10497,
+			"wrapT":10497
+		}
+	],
+	"scene":0,
+	"scenes":[
+		{
+			"nodes":[
+				0
+			]
+		}
+	],
+	"textures":[
+		{
+			"name":"right_leg_diffuse_unplugged",
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":1
+				}
+			}
+		}
+	],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
+	]
 }

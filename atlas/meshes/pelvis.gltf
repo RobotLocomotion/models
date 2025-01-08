@@ -1,189 +1,202 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 5934,
-      "min": [
-        -0.15479999780654907,
-        -0.14669999480247498,
-        -0.1867000013589859
-      ],
-      "max": [
-        0.17499999701976776,
-        0.12720000743865967,
-        0.1860000044107437
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 5934,
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_texcoords",
-      "componentType": 5126,
-      "count": 5934,
-      "min": [
-        0.009255999699234962,
-        0.005582000128924847
-      ],
-      "max": [
-        0.6239960193634033,
-        0.5750139951705933
-      ],
-      "type": "VEC2",
-      "bufferView": 2,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 5934,
-      "min": [
-        0
-      ],
-      "max": [
-        5933
-      ],
-      "type": "SCALAR",
-      "bufferView": 3,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "pelvis",
-      "byteLength": 201756,
-      "uri": "pelvis.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 71208,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 71208,
-      "byteOffset": 71208,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 47472,
-      "byteOffset": 142416,
-      "byteStride": 8,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_3",
-      "buffer": 0,
-      "byteLength": 11868,
-      "byteOffset": 189888,
-      "target": 34963
-    }
-  ],
-  "images": [
-    {
-      "name": "extremities_diffuse_unplugged_mit",
-      "uri": "extremities_diffuse_unplugged_mit.png"
-    }
-  ],
-  "materials": [
-    {
-      "name": "drc_extremities_diffuse",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.998
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "samplers": [
-    {
-      "wrapS": 10497,
-      "wrapT": 10497
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "name": "extremities_diffuse_unplugged_mit",
-      "sampler": 0,
-      "source": 0
-    }
-  ]
+	"accessors":[
+		{
+			"name":"Node-Mesh_0_positions",
+			"componentType":5126,
+			"count":5934,
+			"min":[
+				-0.15479999780654907,
+				-0.14669999480247498,
+				-0.1867000013589859
+			],
+			"max":[
+				0.17499999701976776,
+				0.12720000743865967,
+				0.1860000044107437
+			],
+			"type":"VEC3",
+			"bufferView":0,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_normals",
+			"componentType":5126,
+			"count":5934,
+			"min":[
+				-1,
+				-1,
+				-1
+			],
+			"max":[
+				1,
+				1,
+				1
+			],
+			"type":"VEC3",
+			"bufferView":1,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_texcoords",
+			"componentType":5126,
+			"count":5934,
+			"min":[
+				0.009255999699234962,
+				0.005582000128924847
+			],
+			"max":[
+				0.6239960193634033,
+				0.5750139951705933
+			],
+			"type":"VEC2",
+			"bufferView":2,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_indices",
+			"componentType":5123,
+			"count":5934,
+			"min":[
+				0
+			],
+			"max":[
+				5933
+			],
+			"type":"SCALAR",
+			"bufferView":3,
+			"byteOffset":0
+		}
+	],
+	"asset":{
+		"generator":"obj2gltf",
+		"version":"2.0"
+	},
+	"buffers":[
+		{
+			"name":"pelvis",
+			"byteLength":201756,
+			"uri":"pelvis.bin"
+		}
+	],
+	"bufferViews":[
+		{
+			"name":"bufferView_0",
+			"buffer":0,
+			"byteLength":71208,
+			"byteOffset":0,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_1",
+			"buffer":0,
+			"byteLength":71208,
+			"byteOffset":71208,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_2",
+			"buffer":0,
+			"byteLength":47472,
+			"byteOffset":142416,
+			"byteStride":8,
+			"target":34962
+		},
+		{
+			"name":"bufferView_3",
+			"buffer":0,
+			"byteLength":11868,
+			"byteOffset":189888,
+			"target":34963
+		}
+	],
+	"images":[
+		{
+			"name":"extremities_diffuse_unplugged_mit",
+			"uri":"extremities_diffuse_unplugged_mit.png",
+			"mimeType":"image/png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"extremities_diffuse_unplugged_mit.ktx2"
+		}
+	],
+	"materials":[
+		{
+			"name":"drc_extremities_diffuse",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":0
+				},
+				"baseColorFactor":[
+					1,
+					1,
+					1,
+					1
+				],
+				"metallicFactor":0,
+				"roughnessFactor":0.998
+			},
+			"emissiveFactor":[
+				0,
+				0,
+				0
+			],
+			"alphaMode":"OPAQUE",
+			"doubleSided":false
+		}
+	],
+	"meshes":[
+		{
+			"name":"Node-Mesh",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":0,
+						"NORMAL":1,
+						"TEXCOORD_0":2
+					},
+					"indices":3,
+					"material":0,
+					"mode":4
+				}
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"Node",
+			"mesh":0
+		}
+	],
+	"samplers":[
+		{
+			"wrapS":10497,
+			"wrapT":10497
+		}
+	],
+	"scene":0,
+	"scenes":[
+		{
+			"nodes":[
+				0
+			]
+		}
+	],
+	"textures":[
+		{
+			"name":"extremities_diffuse_unplugged_mit",
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":1
+				}
+			}
+		}
+	],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
+	]
 }
