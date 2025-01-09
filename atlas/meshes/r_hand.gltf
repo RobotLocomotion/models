@@ -3,19 +3,53 @@
 		{
 			"name":"Node-Mesh_0_positions",
 			"componentType":5126,
-			"count":148,
+			"count":876,
 			"min":[
-				-0.05119499936699867,
-				-0.04870200157165527,
-				-0.04119100049138069
+				-0.05119999870657921,
+				-0.048700001090765,
+				-0.041200000792741776
 			],
 			"max":[
 				0.05090000107884407,
-				0.048395998775959015,
-				0.11390399932861328
+				0.04839999973773956,
+				0.11389999836683273
 			],
 			"type":"VEC3",
 			"bufferView":0,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_normals",
+			"componentType":5126,
+			"count":876,
+			"min":[
+				-1,
+				-0.9994942545890808,
+				-1
+			],
+			"max":[
+				1,
+				0.9999427199363708,
+				1
+			],
+			"type":"VEC3",
+			"bufferView":1,
+			"byteOffset":0
+		},
+		{
+			"name":"Node-Mesh_0_texcoords",
+			"componentType":5126,
+			"count":876,
+			"min":[
+				0.0019000000320374966,
+				0.5479999780654907
+			],
+			"max":[
+				0.7925999760627747,
+				0.9919000267982483
+			],
+			"type":"VEC2",
+			"bufferView":2,
 			"byteOffset":0
 		},
 		{
@@ -26,10 +60,10 @@
 				0
 			],
 			"max":[
-				147
+				875
 			],
 			"type":"SCALAR",
-			"bufferView":1,
+			"bufferView":3,
 			"byteOffset":0
 		}
 	],
@@ -40,7 +74,7 @@
 	"buffers":[
 		{
 			"name":"r_hand",
-			"byteLength":3528,
+			"byteLength":29784,
 			"uri":"r_hand.bin"
 		}
 	],
@@ -48,7 +82,7 @@
 		{
 			"name":"bufferView_0",
 			"buffer":0,
-			"byteLength":1776,
+			"byteLength":10512,
 			"byteOffset":0,
 			"byteStride":12,
 			"target":34962
@@ -56,23 +90,53 @@
 		{
 			"name":"bufferView_1",
 			"buffer":0,
+			"byteLength":10512,
+			"byteOffset":10512,
+			"byteStride":12,
+			"target":34962
+		},
+		{
+			"name":"bufferView_2",
+			"buffer":0,
+			"byteLength":7008,
+			"byteOffset":21024,
+			"byteStride":8,
+			"target":34962
+		},
+		{
+			"name":"bufferView_3",
+			"buffer":0,
 			"byteLength":1752,
-			"byteOffset":1776,
+			"byteOffset":28032,
 			"target":34963
+		}
+	],
+	"images":[
+		{
+			"name":"extremities_diffuse_unplugged_mit",
+			"uri":"extremities_diffuse_unplugged_mit.png",
+			"mimeType":"image/png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"extremities_diffuse_unplugged_mit.ktx2"
 		}
 	],
 	"materials":[
 		{
-			"name":"default",
+			"name":"extremities_diffuse",
 			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":0
+				},
 				"baseColorFactor":[
-					0.5,
-					0.5,
-					0.5,
+					1,
+					1,
+					1,
 					1
 				],
 				"metallicFactor":0,
-				"roughnessFactor":1
+				"roughnessFactor":0.998
 			},
 			"emissiveFactor":[
 				0,
@@ -89,9 +153,11 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":0
+						"POSITION":0,
+						"NORMAL":1,
+						"TEXCOORD_0":2
 					},
-					"indices":1,
+					"indices":3,
 					"material":0,
 					"mode":4
 				}
@@ -104,6 +170,12 @@
 			"mesh":0
 		}
 	],
+	"samplers":[
+		{
+			"wrapS":10497,
+			"wrapT":10497
+		}
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -111,5 +183,20 @@
 				0
 			]
 		}
+	],
+	"textures":[
+		{
+			"name":"extremities_diffuse_unplugged_mit",
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":1
+				}
+			}
+		}
+	],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
 	]
 }

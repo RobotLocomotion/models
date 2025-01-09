@@ -1,112 +1,33 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":1737,
-			"min":[
-				-0.14794300496578217,
-				-0.03178200125694275,
-				-0.11721300333738327
-			],
-			"max":[
-				0.019957000389695168,
-				0.1447180062532425,
-				0.11778700351715088
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":1737,
-			"min":[
-				-1,
-				-1,
-				-1
-			],
-			"max":[
-				1,
-				1,
-				1
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":3297,
-			"min":[
-				0
-			],
-			"max":[
-				1736
-			],
-			"type":"SCALAR",
-			"bufferView":2,
-			"byteOffset":0
-		}
-	],
 	"asset":{
-		"generator":"obj2gltf",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"buffers":[
+	"scene":0,
+	"scenes":[
 		{
-			"name":"head",
-			"byteLength":48284,
-			"uri":"head.bin"
+			"name":"Scene",
+			"nodes":[
+				0
+			]
 		}
 	],
-	"bufferViews":[
+	"nodes":[
 		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":20844,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":20844,
-			"byteOffset":20844,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":6596,
-			"byteOffset":41688,
-			"target":34963
+			"mesh":0,
+			"name":"Node"
 		}
 	],
 	"materials":[
 		{
-			"name":"default",
+			"name":"drc_torso_head_diffuse",
 			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.5,
-					0.5,
-					0.5,
-					1
-				],
+				"baseColorTexture":{
+					"index":0
+				},
 				"metallicFactor":0,
-				"roughnessFactor":1
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
+				"roughnessFactor":0.9980000257492065
+			}
 		}
 	],
 	"meshes":[
@@ -116,27 +37,112 @@
 				{
 					"attributes":{
 						"POSITION":0,
-						"NORMAL":1
+						"NORMAL":1,
+						"TEXCOORD_0":2
 					},
-					"indices":2,
-					"material":0,
-					"mode":4
+					"indices":3,
+					"material":0
 				}
 			]
 		}
 	],
-	"nodes":[
+	"textures":[
 		{
-			"name":"Node",
-			"mesh":0
+			"sampler":0,
+			"source":0,
+			"extensions":{
+				"KHR_texture_basisu":{
+					"source":1
+				}
+			}
 		}
 	],
-	"scene":0,
-	"scenes":[
+	"images":[
 		{
-			"nodes":[
-				0
-			]
+			"mimeType":"image/png",
+			"name":"drc_torso_head_diffuse",
+			"uri":"drc_torso_head_diffuse.png"
+		},
+		{
+			"mimeType":"image/ktx2",
+			"uri":"drc_torso_head_diffuse.ktx2"
 		}
+	],
+	"accessors":[
+		{
+			"bufferView":0,
+			"componentType":5126,
+			"count":973,
+			"max":[
+				0.052000001072883606,
+				0.14429999887943268,
+				0.14980000257492065
+			],
+			"min":[
+				-0.11590000241994858,
+				-0.03220000118017197,
+				-0.0851999968290329
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":973,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":973,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":2805,
+			"type":"SCALAR"
+		}
+	],
+	"bufferViews":[
+		{
+			"buffer":0,
+			"byteLength":11676,
+			"byteOffset":0,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":11676,
+			"byteOffset":11676,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":7784,
+			"byteOffset":23352,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":5610,
+			"byteOffset":31136,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
+	"buffers":[
+		{
+			"byteLength":36748,
+			"uri":"head.bin"
+		}
+	],
+	"extensionsUsed":[
+		"KHR_texture_basisu"
 	]
 }
