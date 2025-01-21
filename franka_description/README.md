@@ -6,7 +6,7 @@ The model differs from the original ROS model and the real robot. Notably, in
 this model link 5 has been split into lower and upper sections to improve the
 ability to filter collisions around the wrist. In this model of the hand, the
 fingers are independently actuated, rather than using <mimic> tag, which Drake
-does not yet support.
+does not yet fully support.
 
 In addition, some tags unsupported by Drake have been removed, to reduce the
 burden of warning output. For URDF support details, see:
@@ -46,7 +46,8 @@ https://frankaemika.github.io/docs/control_parameters.html#limits-for-panda
 
 ### Collision Filters
 
-There are several collision filters applied:
+The following collision filter groups are defined, all of which filter
+collisions within their own group:
 - Links 0, 1, 2, and 3 (`group_link0123`)
 - Links 1, 2, 3, and 4 (`group_link1234`)
 - Links 3, 4, 5 (both lower and upper), and 6 (`group_link3456`)
