@@ -326,7 +326,7 @@
     <axis xyz="0 0 1"/>
     <limit effort="87" lower="-3.0718" upper="-0.0698" velocity="2.1750" drake:acceleration="12.5"/>
   </joint>
-  <link name="panda_link5">
+  <link name="panda_link5_lower">
     <inertial>
       <mass value="2.74"/>
       <origin xyz="0 0.0610427 -0.104176" rpy="0 0 0"/>
@@ -348,12 +348,6 @@
       <origin rpy="0 0 0" xyz="0.0 0.0 -0.21"/>
       <geometry>
         <sphere radius="0.06"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.09 -0.055"/>
-      <geometry>
-        <sphere radius="0.035"/>
       </geometry>
     </collision>
     <collision>
@@ -387,36 +381,49 @@
       </geometry>
     </collision>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.08 -0.02"/>
-      <geometry>
-        <sphere radius="0.05"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.08 -0.0"/>
-      <geometry>
-        <sphere radius="0.055"/>
-      </geometry>
-    </collision>
-    <collision>
       <origin rpy="0 0 0" xyz="0.0 0.05 -0.20"/>
       <geometry>
         <sphere radius="0.055"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.07 -0.0"/>
-      <geometry>
-        <sphere radius="0.06"/>
       </geometry>
     </collision>
   </link>
   <joint name="panda_joint5" type="revolute">
     <origin rpy="-1.57079632679 0 0" xyz="-0.0825 0.384 0"/>
     <parent link="panda_link4"/>
-    <child link="panda_link5"/>
+    <child link="panda_link5_lower"/>
     <axis xyz="0 0 1"/>
     <limit effort="12" lower="-2.8973" upper="2.8973" velocity="2.610" drake:acceleration="15.0"/>
+  </joint>
+  <link name="panda_link5_upper">
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.09 -0.055"/>
+      <geometry>
+        <sphere radius="0.035"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.08 -0.02"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.08 0.0"/>
+      <geometry>
+        <sphere radius="0.055"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.07 0.0"/>
+      <geometry>
+        <sphere radius="0.06"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="panda_joint5_lower_upper" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="panda_link5_lower"/>
+    <child link="panda_link5_upper"/>
   </joint>
   <link name="panda_link6">
     <inertial>
@@ -463,7 +470,7 @@
   </link>
   <joint name="panda_joint6" type="revolute">
     <origin rpy="1.57079632679 0 0" xyz="0 0 0"/>
-    <parent link="panda_link5"/>
+    <parent link="panda_link5_upper"/>
     <child link="panda_link6"/>
     <axis xyz="0 0 1"/>
     <limit effort="12" lower="-0.0175" upper="3.7525" velocity="2.610" drake:acceleration="20.0"/>
@@ -512,6 +519,11 @@
     <origin rpy="0 0 0" xyz="0 0 0.107"/>
     <parent link="panda_link7"/>
     <child link="panda_link8"/>
+  </joint>
+  <joint name="panda_hand_joint" type="fixed">
+    <parent link="panda_link8"/>
+    <child link="panda_hand"/>
+    <origin rpy="0 0 -0.785398163397" xyz="0 0 0"/>
   </joint>
   <transmission name="panda_tran1">
     <type>transmission_interface/SimpleTransmission</type>
@@ -597,14 +609,162 @@
       <drake:rotor_inertia value="0.0000205544064" />
     </actuator>
   </transmission>
-  <drake:collision_filter_group name="group_link57">
-    <drake:member link="panda_link5"/>
-    <drake:member link="panda_link7"/>
-    <drake:ignored_collision_filter_group name="group_link57"/>
+  <link name="panda_hand">
+    <inertial>
+      <mass value="0.73"/>
+      <origin xyz="0 0.0015244 0.0275912" rpy="0 0 0"/>
+      <inertia ixx="0.00278560230025" ixy="0.0" ixz="0.0" iyy="0.000400033405336" iyz="0.0" izz="0.00256378041832"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drake_models/franka_description/meshes/visual/hand.gltf"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.06 0.015"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.06 0.03"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.03"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.06 0.03"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="panda_leftfinger">
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0.0145644 0.0227941" rpy="0 0 0"/>
+      <inertia ixx="3.01220925051e-05" ixy="0.0" ixz="0.0" iyy="2.95873808038e-05" iyz="0.0" izz="6.95125211657e-06"/>
+    </inertial>
+    <visual>
+      <origin rpy="1.57079632679 0 0"/>
+      <geometry>
+        <mesh filename="package://drake_models/franka_description/meshes/visual/finger.gltf"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.007 0.045"/>
+      <geometry>
+        <sphere radius="0.012"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.015 0.03"/>
+      <geometry>
+        <sphere radius="0.012"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="panda_rightfinger">
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0.0145644 0.0227941" rpy="0 0 3.14159265359"/>
+      <inertia ixx="3.01220925051e-05" ixy="0.0" ixz="0.0" iyy="2.95873808038e-05" iyz="0.0" izz="6.95125211657e-06"/>
+    </inertial>
+    <visual>
+      <origin rpy="1.57079632679 0 3.14159265359" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drake_models/franka_description/meshes/visual/finger.gltf"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.007 0.045"/>
+      <geometry>
+        <sphere radius="0.012"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.015 0.03"/>
+      <geometry>
+        <sphere radius="0.012"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="panda_finger_joint1" type="prismatic">
+    <parent link="panda_hand"/>
+    <child link="panda_leftfinger"/>
+    <origin rpy="0 0 0" xyz="0 0 0.0584"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="20" lower="0.0" upper="0.04" velocity="0.2"/>
+  </joint>
+  <joint name="panda_finger_joint2" type="prismatic">
+    <parent link="panda_hand"/>
+    <child link="panda_rightfinger"/>
+    <origin rpy="0 0 0" xyz="0 0 0.0584"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="20" lower="0.0" upper="0.04" velocity="0.2"/>
+  </joint>
+  <transmission name="panda_finger_tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="panda_finger_joint1">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="panda_finger_motor1">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="panda_finger_tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="panda_finger_joint2">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="panda_finger_motor2">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <drake:collision_filter_group name="group_link0123">
+    <drake:member link="panda_link0"/>
+    <drake:member link="panda_link1"/>
+    <drake:member link="panda_link2"/>
+    <drake:member link="panda_link3"/>
+    <drake:ignored_collision_filter_group name="group_link0123"/>
   </drake:collision_filter_group>
-  <drake:collision_filter_group name="group_link68">
+  <drake:collision_filter_group name="group_link1234">
+    <drake:member link="panda_link1"/>
+    <drake:member link="panda_link2"/>
+    <drake:member link="panda_link3"/>
+    <drake:member link="panda_link4"/>
+    <drake:ignored_collision_filter_group name="group_link1234"/>
+  </drake:collision_filter_group>
+  <!-- TODO(calderpg-tri) See if this group could be extended to 345678. -->
+  <drake:collision_filter_group name="group_link3456">
+    <drake:member link="panda_link3"/>
+    <drake:member link="panda_link4"/>
+    <drake:member link="panda_link5_lower"/>
+    <drake:member link="panda_link5_upper"/>
     <drake:member link="panda_link6"/>
+    <drake:ignored_collision_filter_group name="group_link3456"/>
+  </drake:collision_filter_group>
+  <drake:collision_filter_group name="group_link567">
+    <drake:member link="panda_link5_lower"/>
+    <drake:member link="panda_link5_upper"/>
+    <drake:member link="panda_link6"/>
+    <drake:member link="panda_link7"/>
+    <drake:ignored_collision_filter_group name="group_link567"/>
+  </drake:collision_filter_group>
+  <drake:collision_filter_group name="group_link5upper678">
+    <drake:member link="panda_link5_upper"/>
+    <drake:member link="panda_link6"/>
+    <drake:member link="panda_link7"/>
     <drake:member link="panda_link8"/>
-    <drake:ignored_collision_filter_group name="group_link68"/>
+    <drake:ignored_collision_filter_group name="group_link5upper678"/>
   </drake:collision_filter_group>
 </robot>
