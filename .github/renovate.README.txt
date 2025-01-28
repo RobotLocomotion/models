@@ -1,0 +1,3 @@
+This `models` repository uses Renovate to help maintain our dependencies; see:
+- https://docs.renovatebot.com/
+- https://docs.renovatebot.com/presets-config/#configrecommended
