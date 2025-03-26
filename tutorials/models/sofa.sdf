@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="sofa">
+    <link name="sofa">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>package://drake_models/tutorials/models/assets/sofa_03_1k.gltf</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

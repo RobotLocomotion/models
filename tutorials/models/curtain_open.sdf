@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="curtains">
+    <link name="curtains">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>package://drake_models/tutorials/models/assets/curtain_open.gltf</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

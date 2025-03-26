@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="tea_set">
+    <link name="tea_set">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>package://drake_models/tutorials/models/assets/tea_set_posed.gltf</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
