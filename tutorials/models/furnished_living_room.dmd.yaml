@@ -1,0 +1,61 @@
+directives:
+- add_model:
+    name: living_room
+    file: package://drake_models/tutorials/models/living_room.sdf
+- add_weld:
+    parent: world
+    child: living_room::living_room
+- add_model:
+    name: cabinet
+    file: package://drake_models/tutorials/models/cabinet.sdf
+- add_weld:
+    parent: world
+    child: cabinet::cabinet
+    X_PC:
+      translation: [-1.7753, 2.5818, 0]
+- add_model:
+    name: bookshelves
+    file: package://drake_models/tutorials/models/bookshelves.sdf
+- add_weld:
+    parent: world
+    child: bookshelves::bookshelves
+    X_PC:
+      translation: [2.716, -1.0716, 0]
+      rotation: !Rpy { deg: [0, 0, -90] }
+- add_model:
+    name: tall_cabinet
+    file: package://drake_models/tutorials/models/tall_cabinet.sdf
+- add_weld:
+    parent: world
+    child: tall_cabinet::tall_cabinet
+    X_PC:
+      translation: [0.0235, 2.6566, 0]
+      rotation: !Rpy { deg: [0, 0, 0] }
+- add_model:
+    name: sofa
+    file: package://drake_models/tutorials/models/sofa.sdf
+- add_weld:
+    parent: world
+    child: sofa::sofa
+    X_PC:
+      translation: [0, -2.4117, 0]
+      rotation: !Rpy { deg: [0, 0, 180] }
+- add_model:
+    name: stool
+    file: package://drake_models/tutorials/models/stool.sdf
+- add_weld:
+    parent: world
+    child: stool::stool
+    X_PC:
+      translation: [1.7744, 1.6287, 0]
+      rotation: !Rpy { deg: [0, 0, 30] }
+- add_model:
+    name: curtains
+    file: package://drake_models/tutorials/models/curtain_open.sdf
+- add_weld:
+    parent: world
+    child: curtains::curtains
+    X_PC:
+      translation: [0, 0, 0]
+
+
