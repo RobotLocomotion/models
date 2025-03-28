@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="tall_cabinet">
+    <link name="tall_cabinet">
+      <inertial>
+        <mass>1.</mass>
+        <inertia>
+          <ixx>8.41666666</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>8.41666666</iyy>
+          <iyz>0</iyz>
+          <izz>16.6666666</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>package://drake_models/tutorials/models/polyhaven_gltf/painted_wooden_cabinet_02_1k.gltf/painted_wooden_cabinet_02_1k.gltf</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
