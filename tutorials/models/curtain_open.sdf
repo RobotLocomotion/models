@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/tutorials/models/gltf/curtain/curtain_open.gltf</uri>
+            <uri>package://drake_models/tutorials/models/assets/curtain_open.gltf</uri>
           </mesh>
         </geometry>
       </visual>

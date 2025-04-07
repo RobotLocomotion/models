@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/tutorials/models/gltf/sphere.gltf</uri>
+            <uri>package://drake_models/tutorials/models/assets/sphere.gltf</uri>
           </mesh>
         </geometry>
       </visual>

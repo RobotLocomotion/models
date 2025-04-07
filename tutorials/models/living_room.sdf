@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/tutorials/models/gltf/living_room/living_room.gltf</uri>
+            <uri>package://drake_models/tutorials/models/assets/living_room.gltf</uri>
           </mesh>
         </geometry>
       </visual>

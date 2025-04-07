@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/tutorials/models/polyhaven_gltf/sofa_03_1k.gltf/sofa_03_1k.gltf</uri>
+            <uri>package://drake_models/tutorials/models/assets/sofa_03_1k.gltf</uri>
           </mesh>
         </geometry>
       </visual>

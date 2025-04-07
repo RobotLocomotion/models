@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://drake_models/tutorials/models/polyhaven_gltf/painted_wooden_stool_1k.gltf/painted_wooden_stool_1k.gltf</uri>
+            <uri>package://drake_models/tutorials/models/assets/painted_wooden_stool_1k.gltf</uri>
           </mesh>
         </geometry>
       </visual>
