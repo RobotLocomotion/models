@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="stool">
+    <link name="stool">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>package://drake_models/tutorials/models/assets/painted_wooden_stool_1k.gltf</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

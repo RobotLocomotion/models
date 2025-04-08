@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="wooden_table">
+    <link name="table">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>package://drake_models/tutorials/models/assets/wooden_table_02_1k.gltf</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <frame name="table_top_center">
+      <pose relative_to="table">0 0 0.8 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>
