@@ -1,148 +1,205 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.3.47",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"Node"
-		}
-	],
-	"materials":[
-		{
-			"name":"extremities_diffuse",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0,
-				"roughnessFactor":0.9980000257492065
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"Node-Mesh.012",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0
-				}
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":1
-				}
-			}
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"extremities_diffuse_unplugged_mit",
-			"uri":"extremities_diffuse_unplugged_mit.png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"extremities_diffuse_unplugged_mit.ktx2"
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":185,
-			"max":[
-				0.062199998646974564,
-				0.04960000142455101,
-				0.03539999946951866
-			],
-			"min":[
-				-0.06239999830722809,
-				-0.04989999905228615,
-				-0.15610000491142273
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":185,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":185,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":3,
-			"componentType":5123,
-			"count":588,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":2220,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":2220,
-			"byteOffset":2220,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":1480,
-			"byteOffset":4440,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":1176,
-			"byteOffset":5920,
-			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":7096,
-			"uri":"r_farm.bin"
-		}
-	],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
+        {
+            "uri": "r_farm.bin",
+            "byteLength": 5004
+        },
+        {
+            "uri": "r_farm.fallback.bin",
+            "byteLength": 7096,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 2220,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 1827,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 185
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 2220,
+            "byteLength": 2220,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 1828,
+                    "byteLength": 1828,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 185
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 4440,
+            "byteLength": 1480,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 3656,
+                    "byteLength": 1126,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 185
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 5920,
+            "byteLength": 1176,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 4784,
+                    "byteLength": 220,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 588
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 185,
+            "type": "VEC3",
+            "min": [
+                -0.0623999983,
+                -0.0498999991,
+                -0.156100005
+            ],
+            "max": [
+                0.0621999986,
+                0.0496000014,
+                0.0353999995
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 185,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 185,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 588,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "images": [
+        {
+            "name": "extremities_diffuse_unplugged_mit",
+            "uri": "extremities_diffuse_unplugged_mit.png"
+        },
+        {
+            "uri": "extremities_diffuse_unplugged_mit.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 1
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "extremities_diffuse",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.998000026
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

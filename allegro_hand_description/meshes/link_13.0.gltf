@@ -1,142 +1,152 @@
 {
-  "accessors": [
-    {
-      "name": "<STL_BINARY>_1_0_positions",
-      "componentType": 5126,
-      "count": 678,
-      "min": [
-        -0.009800000116229057,
-        -0.00016711499483790249,
-        -0.013450000435113907
-      ],
-      "max": [
-        0.009800000116229057,
-        0.021832900121808052,
-        0.013450000435113907
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "name": "<STL_BINARY>_1_0_normals",
-      "componentType": 5126,
-      "count": 678,
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "<STL_BINARY>_1_0_indices",
-      "componentType": 5123,
-      "count": 1344,
-      "min": [
-        0
-      ],
-      "max": [
-        677
-      ],
-      "type": "SCALAR",
-      "bufferView": 2,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "link_13.0",
-      "byteLength": 18960,
-      "uri": "link_13.0.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 8136,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 8136,
-      "byteOffset": 8136,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 2688,
-      "byteOffset": 16272,
-      "target": 34963
-    }
-  ],
-  "materials": [
-    {
-      "name": "AluminumBodyMaterial",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.001,
-          0.001,
-          0.001,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.5
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "<STL_BINARY>_1",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1
-          },
-          "indices": 2,
-          "material": 0,
-          "mode": 4
+            "uri": "link_13.0.bin",
+            "byteLength": 8080
+        },
+        {
+            "uri": "link_13.0.fallback.bin",
+            "byteLength": 18960,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "<STL_BINARY>",
-      "mesh": 0
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 8136,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 4694,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 678
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 8136,
+            "byteLength": 8136,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 4696,
+                    "byteLength": 2908,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 678
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 16272,
+            "byteLength": 2688,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 7604,
+                    "byteLength": 475,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 1344
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 678,
+            "type": "VEC3",
+            "min": [
+                -0.00980000012,
+                -0.000167114995,
+                -0.0134500004
+            ],
+            "max": [
+                0.00980000012,
+                0.0218329001,
+                0.0134500004
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 678,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1344,
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "name": "AluminumBodyMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.00100000005,
+                    0.00100000005,
+                    0.00100000005,
+                    1
+                ],
+                "metallicFactor": 0,
+                "roughnessFactor": 0.5
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "<STL_BINARY>",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

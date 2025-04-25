@@ -1,167 +1,153 @@
 {
-  "accessors": [
-    {
-      "name": "plate_8in_col_concave_Vert.026-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 642,
-      "min": [
-        -0.09810499846935272,
-        0.00020799999765586108,
-        -0.09810499846935272
-      ],
-      "max": [
-        0.09810499846935272,
-        0.01796800084412098,
-        0.09810499846935272
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "name": "plate_8in_col_concave_Vert.026-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 642,
-      "min": [
-        -0.9597958922386169,
-        -1,
-        -0.9597958922386169
-      ],
-      "max": [
-        0.9597958922386169,
-        1,
-        0.9597958922386169
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "plate_8in_col_concave_Vert.026-Mesh_0_texcoords",
-      "componentType": 5126,
-      "count": 642,
-      "min": [
-        0.006134000141173601,
-        0.010817999951541424
-      ],
-      "max": [
-        0.9937769770622253,
-        0.9927700161933899
-      ],
-      "type": "VEC2",
-      "bufferView": 2,
-      "byteOffset": 0
-    },
-    {
-      "name": "plate_8in_col_concave_Vert.026-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 2688,
-      "min": [
-        0
-      ],
-      "max": [
-        641
-      ],
-      "type": "SCALAR",
-      "bufferView": 3,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "plate_8in_col",
-      "byteLength": 25920,
-      "uri": "plate_8in.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 7704,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 7704,
-      "byteOffset": 7704,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 5136,
-      "byteOffset": 15408,
-      "byteStride": 8,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_3",
-      "buffer": 0,
-      "byteLength": 5376,
-      "byteOffset": 20544,
-      "target": 34963
-    }
-  ],
-  "materials": [
-    {
-      "name": "plate_8in_material",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.45,
-          0.45,
-          0.45,
-          0.8
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "BLEND",
-      "doubleSided": true
-    }
-  ],
-  "meshes": [
-    {
-      "name": "plate_8in_col_concave_Vert.026-Mesh",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
+            "uri": "plate_8in.bin",
+            "byteLength": 13328
+        },
+        {
+            "uri": "plate_8in.fallback.bin",
+            "byteLength": 20784,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "plate_8in_col_concave_Vert.026",
-      "mesh": 0
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 7704,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 6259,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 642
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 7704,
+            "byteLength": 7704,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 6260,
+                    "byteLength": 6071,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 642
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 15408,
+            "byteLength": 5376,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 12332,
+                    "byteLength": 993,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 2688
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 642,
+            "type": "VEC3",
+            "min": [
+                -0.0981049985,
+                0.000207999998,
+                -0.0981049985
+            ],
+            "max": [
+                0.0981049985,
+                0.0179680008,
+                0.0981049985
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 642,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 2688,
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "name": "plate_8in_material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.449999988,
+                    0.449999988,
+                    0.449999988,
+                    0.800000012
+                ],
+                "metallicFactor": 0
+            },
+            "alphaMode": "BLEND",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "plate_8in_col_concave_Vert.026",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

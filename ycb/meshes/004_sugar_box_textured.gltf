@@ -1,204 +1,203 @@
 {
-	"accessors":[
-		{
-			"name":"Node-Mesh_0_positions",
-			"componentType":5126,
-			"count":8393,
-			"min":[
-				-0.032214999198913574,
-				3.099999958067201e-05,
-				-0.030369000509381294
-			],
-			"max":[
-				0.017280999571084976,
-				0.1760459989309311,
-				0.06379300355911255
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_normals",
-			"componentType":5126,
-			"count":8393,
-			"min":[
-				-0.9999955892562866,
-				-0.9999995231628418,
-				-0.9999877214431763
-			],
-			"max":[
-				0.9999737739562988,
-				0.999977171421051,
-				0.9999920725822449
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":8393,
-			"min":[
-				0.01041099987924099,
-				0.01041099987924099
-			],
-			"max":[
-				0.9832760095596313,
-				0.9895889759063721
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Node-Mesh_0_indices",
-			"componentType":5123,
-			"count":49152,
-			"min":[
-				0
-			],
-			"max":[
-				8392
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
-	"asset":{
-		"generator":"obj2gltf",
-		"version":"2.0"
-	},
-	"buffers":[
-		{
-			"name":"004_sugar_box_textured",
-			"byteLength":366880,
-			"uri":"004_sugar_box_textured.bin"
-		}
-	],
-	"bufferViews":[
-		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":100716,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":100716,
-			"byteOffset":100716,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":67144,
-			"byteOffset":201432,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":98304,
-			"byteOffset":268576,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"004_sugar_box_textured",
-			"mimeType":"image/png",
-			"uri":"004_sugar_box_textured.png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"004_sugar_box_textured.ktx2"
-		}
-	],
-	"materials":[
-		{
-			"name":"material_0",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":1
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
-		}
-	],
-	"meshes":[
-		{
-			"name":"Node-Mesh",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0,
-					"mode":4
-				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Node",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9986,
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
-			]
-		}
-	],
-	"textures":[
-		{
-			"name":"004_sugar_box_textured",
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":1
-				}
-			}
-		}
-	],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
+        {
+            "uri": "004_sugar_box_textured.bin",
+            "byteLength": 219720
+        },
+        {
+            "uri": "004_sugar_box_textured.fallback.bin",
+            "byteLength": 366880,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 100716,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 73803,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 8393
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 100716,
+            "byteLength": 100716,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 73804,
+                    "byteLength": 79637,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 8393
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 201432,
+            "byteLength": 67144,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 153444,
+                    "byteLength": 46612,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 8393
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 268576,
+            "byteLength": 98304,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 200056,
+                    "byteLength": 19664,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 49152
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 8393,
+            "type": "VEC3",
+            "min": [
+                -0.0322149992,
+                3.09999996e-05,
+                -0.0303690005
+            ],
+            "max": [
+                0.0172809996,
+                0.176045999,
+                0.0637930036
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 8393,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 8393,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 49152,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9986
+        }
+    ],
+    "images": [
+        {
+            "name": "004_sugar_box_textured",
+            "uri": "004_sugar_box_textured.png"
+        },
+        {
+            "uri": "004_sugar_box_textured.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 1
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "material_0",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

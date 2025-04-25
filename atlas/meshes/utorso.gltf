@@ -1,148 +1,205 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.3.47",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"Node"
-		}
-	],
-	"materials":[
-		{
-			"name":"_07 - Default",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0,
-				"roughnessFactor":0.9980000257492065
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"Node-Mesh.023",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0
-				}
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":1
-				}
-			}
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"torso_diffuse_unplugged_mit",
-			"uri":"torso_diffuse_unplugged_mit.png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"torso_diffuse_unplugged_mit.ktx2"
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":6486,
-			"max":[
-				0.3131999969482422,
-				0.8309999704360962,
-				0.2800000011920929
-			],
-			"min":[
-				-0.310699999332428,
-				-0.02889999933540821,
-				-0.2800000011920929
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":6486,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":6486,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":3,
-			"componentType":5123,
-			"count":20892,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":77832,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":77832,
-			"byteOffset":77832,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":51888,
-			"byteOffset":155664,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":41784,
-			"byteOffset":207552,
-			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":249336,
-			"uri":"utorso.bin"
-		}
-	],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
+        {
+            "uri": "utorso.bin",
+            "byteLength": 154584
+        },
+        {
+            "uri": "utorso.fallback.bin",
+            "byteLength": 249336,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 77832,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 55339,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 6486
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 77832,
+            "byteLength": 77832,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 55340,
+                    "byteLength": 54927,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 6486
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 155664,
+            "byteLength": 51888,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 110268,
+                    "byteLength": 36908,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 6486
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 207552,
+            "byteLength": 41784,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 147176,
+                    "byteLength": 7408,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 20892
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 6486,
+            "type": "VEC3",
+            "min": [
+                -0.310699999,
+                -0.0288999993,
+                -0.280000001
+            ],
+            "max": [
+                0.313199997,
+                0.83099997,
+                0.280000001
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 6486,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 6486,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20892,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "images": [
+        {
+            "name": "torso_diffuse_unplugged_mit",
+            "uri": "torso_diffuse_unplugged_mit.png"
+        },
+        {
+            "uri": "torso_diffuse_unplugged_mit.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 1
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "_07 - Default",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.998000026
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

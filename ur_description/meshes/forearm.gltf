@@ -1,237 +1,249 @@
 {
-	"accessors":[
-		{
-			"name":"forearm_1_0_positions",
-			"componentType":5126,
-			"count":12829,
-			"min":[
-				-0.03746679797768593,
-				-0.037782102823257446,
-				-0.0465499572455883
-			],
-			"max":[
-				0.03746679797768593,
-				0.2449062168598175,
-				0.046567756682634354
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"forearm_1_0_normals",
-			"componentType":5126,
-			"count":12829,
-			"min":[
-				-1,
-				-1,
-				-1
-			],
-			"max":[
-				1,
-				1,
-				1
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"forearm_1_0_texcoords",
-			"componentType":5126,
-			"count":12829,
-			"min":[
-				0.009064257144927979,
-				0.0421525202691555
-			],
-			"max":[
-				0.989554226398468,
-				0.99094158411026
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"forearm_1_0_indices",
-			"componentType":5123,
-			"count":65370,
-			"min":[
-				0
-			],
-			"max":[
-				12828
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
-	"asset":{
-		"generator":"obj2gltf",
-		"version":"2.0"
-	},
-	"buffers":[
-		{
-			"name":"forearm",
-			"byteLength":541268,
-			"uri":"forearm.bin"
-		}
-	],
-	"bufferViews":[
-		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":153948,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":153948,
-			"byteOffset":153948,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":102632,
-			"byteOffset":307896,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":130740,
-			"byteOffset":410528,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"ur3e_normal",
-			"uri":"ur3e_normal.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"ur3e_color",
-			"uri":"ur3e_color.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"ur3e_occlusion_roughness_metallic",
-			"uri":"ur3e_occlusion_roughness_metallic.png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"ur3e_normal.ktx2"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"ur3e_color.ktx2"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"ur3e_occlusion_roughness_metallic.ktx2"
-		}
-	],
-	"materials":[
-		{
-			"name":"ur3e_material",
-			"normalTexture":{
-				"index":0
-			},
-			"occlusionTexture":{
-				"index":2
-			},
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.8,
-					0.8,
-					0.8,
-					1
-				],
-				"baseColorTexture":{
-					"index":1
-				},
-				"metallicRoughnessTexture":{
-					"index":2
-				}
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"forearm_1",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0,
-					"mode":4
-				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"forearm",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":3
-				}
-			}
-		},
-		{
-			"sampler":0,
-			"source":1,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":4
-				}
-			}
-		},
-		{
-			"sampler":0,
-			"source":2,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":5
-				}
-			}
-		}
-	],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
+        {
+            "uri": "forearm.bin",
+            "byteLength": 323552
+        },
+        {
+            "uri": "forearm.fallback.bin",
+            "byteLength": 541268,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 153948,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 108164,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 12829
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 153948,
+            "byteLength": 153948,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 108164,
+                    "byteLength": 127201,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 12829
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 307896,
+            "byteLength": 102632,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 235368,
+                    "byteLength": 63071,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 12829
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 410528,
+            "byteLength": 130740,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 298440,
+                    "byteLength": 25111,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 65370
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 12829,
+            "type": "VEC3",
+            "min": [
+                -0.037466798,
+                -0.0377821028,
+                -0.0465499572
+            ],
+            "max": [
+                0.037466798,
+                0.244906217,
+                0.0465677567
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 12829,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 12829,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 65370,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "images": [
+        {
+            "name": "ur3e_normal",
+            "uri": "ur3e_normal.png"
+        },
+        {
+            "name": "ur3e_color",
+            "uri": "ur3e_color.png"
+        },
+        {
+            "name": "ur3e_occlusion_roughness_metallic",
+            "uri": "ur3e_occlusion_roughness_metallic.png"
+        },
+        {
+            "uri": "ur3e_normal.ktx2"
+        },
+        {
+            "uri": "ur3e_color.ktx2"
+        },
+        {
+            "uri": "ur3e_occlusion_roughness_metallic.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 3
+                }
+            }
+        },
+        {
+            "sampler": 0,
+            "source": 1,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 4
+                }
+            }
+        },
+        {
+            "sampler": 0,
+            "source": 2,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 5
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "ur3e_material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000012,
+                    0.800000012,
+                    0.800000012,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            },
+            "normalTexture": {
+                "index": 0
+            },
+            "occlusionTexture": {
+                "index": 2
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "forearm",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }
