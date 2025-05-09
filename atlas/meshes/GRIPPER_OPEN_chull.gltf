@@ -1,91 +1,137 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.3.47",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"GRIPPER_OPEN_chull"
-		}
-	],
-	"meshes":[
-		{
-			"name":"GRIPPER_OPEN_chull",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1
-					},
-					"indices":2
-				}
-			]
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":60,
-			"max":[
-				0.12167400121688843,
-				0.059567999094724655,
-				0.0637039989233017
-			],
-			"min":[
-				-0.11667700111865997,
-				-0.15751999616622925,
-				-0.06420499831438065
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":60,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5123,
-			"count":60,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":720,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":720,
-			"byteOffset":720,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":120,
-			"byteOffset":1440,
-			"target":34963
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":1560,
-			"uri":"GRIPPER_OPEN_chull.bin"
-		}
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
+        {
+            "uri": "GRIPPER_OPEN_chull.bin",
+            "byteLength": 1228
+        },
+        {
+            "uri": "GRIPPER_OPEN_chull.fallback.bin",
+            "byteLength": 1560,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 720,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 742,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 60
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 720,
+            "byteLength": 720,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 744,
+                    "byteLength": 441,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 60
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 1440,
+            "byteLength": 120,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 1188,
+                    "byteLength": 37,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 60
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 60,
+            "type": "VEC3",
+            "min": [
+                -0.116677001,
+                -0.157519996,
+                -0.0642049983
+            ],
+            "max": [
+                0.121674001,
+                0.0595679991,
+                0.0637039989
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 60,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 60,
+            "type": "SCALAR"
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "GRIPPER_OPEN_chull",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

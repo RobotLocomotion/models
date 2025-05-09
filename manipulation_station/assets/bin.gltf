@@ -1,204 +1,204 @@
 {
-	"accessors":[
-		{
-			"name":"Kurze_Zwischenstrebe_quer_2_Instanz.2_3-Mesh_0_positions",
-			"componentType":5126,
-			"count":11114,
-			"min":[
-				-0.27905699610710144,
-				-7.100000220816582e-05,
-				-0.20905399322509766
-			],
-			"max":[
-				0.27903398871421814,
-				0.20988799631595612,
-				0.20905399322509766
-			],
-			"type":"VEC3",
-			"bufferView":0,
-			"byteOffset":0
-		},
-		{
-			"name":"Kurze_Zwischenstrebe_quer_2_Instanz.2_3-Mesh_0_normals",
-			"componentType":5126,
-			"count":11114,
-			"min":[
-				-1,
-				-0.9999998211860657,
-				-0.9999998211860657
-			],
-			"max":[
-				0.9999993443489075,
-				1,
-				0.9999999403953552
-			],
-			"type":"VEC3",
-			"bufferView":1,
-			"byteOffset":0
-		},
-		{
-			"name":"Kurze_Zwischenstrebe_quer_2_Instanz.2_3-Mesh_0_texcoords",
-			"componentType":5126,
-			"count":11114,
-			"min":[
-				0.004391999915242195,
-				0.004391999915242195
-			],
-			"max":[
-				0.9955819845199585,
-				0.9956079721450806
-			],
-			"type":"VEC2",
-			"bufferView":2,
-			"byteOffset":0
-		},
-		{
-			"name":"Kurze_Zwischenstrebe_quer_2_Instanz.2_3-Mesh_0_indices",
-			"componentType":5123,
-			"count":22350,
-			"min":[
-				0
-			],
-			"max":[
-				11113
-			],
-			"type":"SCALAR",
-			"bufferView":3,
-			"byteOffset":0
-		}
-	],
-	"asset":{
-		"generator":"obj2gltf",
-		"version":"2.0"
-	},
-	"buffers":[
-		{
-			"name":"bin",
-			"byteLength":400348,
-			"uri":"bin.bin"
-		}
-	],
-	"bufferViews":[
-		{
-			"name":"bufferView_0",
-			"buffer":0,
-			"byteLength":133368,
-			"byteOffset":0,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_1",
-			"buffer":0,
-			"byteLength":133368,
-			"byteOffset":133368,
-			"byteStride":12,
-			"target":34962
-		},
-		{
-			"name":"bufferView_2",
-			"buffer":0,
-			"byteLength":88912,
-			"byteOffset":266736,
-			"byteStride":8,
-			"target":34962
-		},
-		{
-			"name":"bufferView_3",
-			"buffer":0,
-			"byteLength":44700,
-			"byteOffset":355648,
-			"target":34963
-		}
-	],
-	"images":[
-		{
-			"name":"bin",
-			"uri":"bin.png",
-			"mimeType":"image/png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"bin.ktx2"
-		}
-	],
-	"materials":[
-		{
-			"name":"InteriorPack_01.008",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"baseColorFactor":[
-					1,
-					1,
-					1,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":0.775
-			},
-			"emissiveFactor":[
-				0,
-				0,
-				0
-			],
-			"alphaMode":"OPAQUE",
-			"doubleSided":false
-		}
-	],
-	"meshes":[
-		{
-			"name":"Kurze_Zwischenstrebe_quer_2_Instanz.2_3-Mesh",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0,
-					"mode":4
-				}
-			]
-		}
-	],
-	"nodes":[
-		{
-			"name":"Kurze_Zwischenstrebe_quer_2_Instanz.2_3",
-			"mesh":0
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9986,
-			"wrapS":10497,
-			"wrapT":10497
-		}
-	],
-	"scene":0,
-	"scenes":[
-		{
-			"nodes":[
-				0
-			]
-		}
-	],
-	"textures":[
-		{
-			"name":"bin",
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":1
-				}
-			}
-		}
-	],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
+        {
+            "uri": "bin.bin",
+            "byteLength": 283068
+        },
+        {
+            "uri": "bin.fallback.bin",
+            "byteLength": 400348,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 133368,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 92375,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 11114
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 133368,
+            "byteLength": 133368,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 92376,
+                    "byteLength": 117542,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 11114
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 266736,
+            "byteLength": 88912,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 209920,
+                    "byteLength": 65523,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 11114
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 355648,
+            "byteLength": 44700,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 275444,
+                    "byteLength": 7621,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 22350
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 11114,
+            "type": "VEC3",
+            "min": [
+                -0.279056996,
+                -7.10000022e-05,
+                -0.209053993
+            ],
+            "max": [
+                0.279033989,
+                0.209887996,
+                0.209053993
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 11114,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 11114,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 22350,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9986
+        }
+    ],
+    "images": [
+        {
+            "name": "bin",
+            "uri": "bin.png"
+        },
+        {
+            "uri": "bin.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 1
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "InteriorPack_01.008",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.774999976
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Kurze_Zwischenstrebe_quer_2_Instanz.2_3",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }
