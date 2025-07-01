@@ -1,253 +1,286 @@
 {
-  "asset": {
-    "generator": "Khronos glTF Blender I/O v1.6.16",
-    "version": "2.0"
-  },
-  "scene": 0,
-  "scenes": [
-    {
-      "name": "Scene",
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "mesh": 0,
-      "name": "sofa_03"
-    }
-  ],
-  "materials": [
-    {
-      "doubleSided": true,
-      "name": "sofa_03",
-      "normalTexture": {
-        "index": 0
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 1
-        },
-        "metallicFactor": 0,
-        "metallicRoughnessTexture": {
-          "index": 2
-        }
-      }
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "alphaMode": "BLEND",
-      "doubleSided": true,
-      "name": "sofa_03_fringe",
-      "normalTexture": {
-        "index": 3
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 4
-        },
-        "metallicFactor": 0,
-        "metallicRoughnessTexture": {
-          "index": 5
-        }
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Mesh.009",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0
+            "uri": "sofa_03_1k.bin",
+            "byteLength": 153080
         },
         {
-          "attributes": {
-            "POSITION": 4,
-            "NORMAL": 5,
-            "TEXCOORD_0": 6
-          },
-          "indices": 7,
-          "material": 1
+            "uri": "sofa_03_1k.fallback.bin",
+            "byteLength": 228984,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 3
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    }
-  ],
-  "images": [
-    {
-      "mimeType": "image/jpeg",
-      "name": "sofa_03_nor_gl",
-      "uri": "textures/sofa_03_nor_gl_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "sofa_03_diff.png",
-      "uri": "textures/sofa_03_diff_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "sofa_03_rough.png",
-      "uri": "textures/sofa_03_rough_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "sofa_03_diff.png-sofa_03_opacity",
-      "uri": "textures/sofa_03_diff_1k.jpg"
-    }
-  ],
-  "accessors": [
-    {
-      "bufferView": 0,
-      "componentType": 5126,
-      "count": 4507,
-      "max": [
-        1.365588665008545,
-        1.1188924312591553,
-        0.46120065450668335
-      ],
-      "min": [
-        -1.365588665008545,
-        0.0006283945986069739,
-        -0.46388354897499084
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 4507,
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 2,
-      "componentType": 5126,
-      "count": 4507,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5123,
-      "count": 20982,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 4,
-      "componentType": 5126,
-      "count": 1148,
-      "max": [
-        1.1109504699707031,
-        1.0264620780944824,
-        0.2057821899652481
-      ],
-      "min": [
-        -1.1109505891799927,
-        0.4996996223926544,
-        -0.3475067615509033
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 5,
-      "componentType": 5126,
-      "count": 1148,
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 6,
-      "componentType": 5126,
-      "count": 1148,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 7,
-      "componentType": 5123,
-      "count": 3030,
-      "type": "SCALAR"
-    }
-  ],
-  "bufferViews": [
-    {
-      "buffer": 0,
-      "byteLength": 54084,
-      "byteOffset": 0
-    },
-    {
-      "buffer": 0,
-      "byteLength": 54084,
-      "byteOffset": 54084
-    },
-    {
-      "buffer": 0,
-      "byteLength": 36056,
-      "byteOffset": 108168
-    },
-    {
-      "buffer": 0,
-      "byteLength": 41964,
-      "byteOffset": 144224
-    },
-    {
-      "buffer": 0,
-      "byteLength": 13776,
-      "byteOffset": 186188
-    },
-    {
-      "buffer": 0,
-      "byteLength": 13776,
-      "byteOffset": 199964
-    },
-    {
-      "buffer": 0,
-      "byteLength": 9184,
-      "byteOffset": 213740
-    },
-    {
-      "buffer": 0,
-      "byteLength": 6060,
-      "byteOffset": 222924
-    }
-  ],
-  "samplers": [
-    {
-      "magFilter": 9729,
-      "minFilter": 9987
-    }
-  ],
-  "buffers": [
-    {
-      "byteLength": 228984,
-      "uri": "sofa_03.bin"
-    }
-  ]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 67860,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 52225,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 5655
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 67860,
+            "byteLength": 67860,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 52228,
+                    "byteLength": 58766,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 5655
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 135720,
+            "byteLength": 45240,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 110996,
+                    "byteLength": 33279,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 5655
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 180960,
+            "byteLength": 48024,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 144276,
+                    "byteLength": 8802,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 24012
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 4507,
+            "type": "VEC3",
+            "min": [
+                -1.36558867,
+                0.000628394599,
+                -0.463883549
+            ],
+            "max": [
+                1.36558867,
+                1.11889243,
+                0.461200655
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 4507,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 4507,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20982,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 54084,
+            "componentType": 5126,
+            "count": 1148,
+            "type": "VEC3",
+            "min": [
+                -1.11095059,
+                0.499699622,
+                -0.347506762
+            ],
+            "max": [
+                1.11095047,
+                1.02646208,
+                0.20578219
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 54084,
+            "componentType": 5126,
+            "count": 1148,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 36056,
+            "componentType": 5126,
+            "count": 1148,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 41964,
+            "componentType": 5123,
+            "count": 3030,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "images": [
+        {
+            "name": "sofa_03_nor_gl",
+            "uri": "textures/sofa_03_nor_gl_1k.jpg"
+        },
+        {
+            "name": "sofa_03_diff.png",
+            "uri": "textures/sofa_03_diff_1k.jpg"
+        },
+        {
+            "name": "sofa_03_rough.png",
+            "uri": "textures/sofa_03_rough_1k.jpg"
+        },
+        {
+            "name": "sofa_03_diff.png-sofa_03_opacity",
+            "uri": "textures/sofa_03_diff_1k.jpg"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        }
+    ],
+    "materials": [
+        {
+            "name": "sofa_03",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicFactor": 0,
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            },
+            "normalTexture": {
+                "index": 0
+            },
+            "doubleSided": true
+        },
+        {
+            "name": "sofa_03_fringe",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                },
+                "metallicFactor": 0,
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            },
+            "normalTexture": {
+                "index": 0
+            },
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                },
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "sofa_03",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

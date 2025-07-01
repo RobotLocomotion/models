@@ -1,237 +1,249 @@
 {
-  "accessors": [
-    {
-      "name": "shoulder_1_0_positions",
-      "componentType": 5126,
-      "count": 10132,
-      "min": [
-        -0.04689967632293701,
-        -0.05705001950263977,
-        -0.06294997781515121
-      ],
-      "max": [
-        0.04689967632293701,
-        0.05803542584180832,
-        0.046944454312324524
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "name": "shoulder_1_0_normals",
-      "componentType": 5126,
-      "count": 10132,
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "shoulder_1_0_texcoords",
-      "componentType": 5126,
-      "count": 10132,
-      "min": [
-        0.07593262195587158,
-        0.009442449547350407
-      ],
-      "max": [
-        0.9000205993652344,
-        0.9377176761627197
-      ],
-      "type": "VEC2",
-      "bufferView": 2,
-      "byteOffset": 0
-    },
-    {
-      "name": "shoulder_1_0_indices",
-      "componentType": 5123,
-      "count": 49584,
-      "min": [
-        0
-      ],
-      "max": [
-        10131
-      ],
-      "type": "SCALAR",
-      "bufferView": 3,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "shoulder",
-      "byteLength": 423392,
-      "uri": "shoulder.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 121584,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 121584,
-      "byteOffset": 121584,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 81056,
-      "byteOffset": 243168,
-      "byteStride": 8,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_3",
-      "buffer": 0,
-      "byteLength": 99168,
-      "byteOffset": 324224,
-      "target": 34963
-    }
-  ],
-  "images": [
-		{
-			"mimeType":"image/png",
-			"name":"ur3e_normal",
-			"uri":"ur3e_normal.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"ur3e_color",
-			"uri":"ur3e_color.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"ur3e_occlusion_roughness_metallic",
-			"uri":"ur3e_occlusion_roughness_metallic.png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"ur3e_normal.ktx2"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"ur3e_color.ktx2"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"ur3e_occlusion_roughness_metallic.ktx2"
-		}
-  ],
-  "materials": [
-		{
-			"name":"ur3e_material",
-			"normalTexture":{
-				"index":0
-			},
-			"occlusionTexture":{
-				"index":2
-			},
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.8,
-					0.8,
-					0.8,
-					1
-				],
-				"baseColorTexture":{
-					"index":1
-				},
-				"metallicRoughnessTexture":{
-					"index":2
-				}
-			}
-		}
-  ],
-  "meshes": [
-    {
-      "name": "shoulder_1",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
+            "uri": "shoulder.bin",
+            "byteLength": 255312
+        },
+        {
+            "uri": "shoulder.fallback.bin",
+            "byteLength": 423392,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "shoulder",
-      "mesh": 0
-    }
-  ],
-  "samplers": [
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-		{
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":3
-				}
-			}
-		},
-		{
-			"sampler":0,
-			"source":1,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":4
-				}
-			}
-		},
-		{
-			"sampler":0,
-			"source":2,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":5
-				}
-			}
-		}
-  ],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 121584,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 86012,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 10132
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 121584,
+            "byteLength": 121584,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 86012,
+                    "byteLength": 100429,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 10132
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 243168,
+            "byteLength": 81056,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 186444,
+                    "byteLength": 49987,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 10132
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 324224,
+            "byteLength": 99168,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 236432,
+                    "byteLength": 18878,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 49584
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 10132,
+            "type": "VEC3",
+            "min": [
+                -0.0468996763,
+                -0.0570500195,
+                -0.0629499778
+            ],
+            "max": [
+                0.0468996763,
+                0.0580354258,
+                0.0469444543
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 10132,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 10132,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 49584,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "images": [
+        {
+            "name": "ur3e_normal",
+            "uri": "ur3e_normal.png"
+        },
+        {
+            "name": "ur3e_color",
+            "uri": "ur3e_color.png"
+        },
+        {
+            "name": "ur3e_occlusion_roughness_metallic",
+            "uri": "ur3e_occlusion_roughness_metallic.png"
+        },
+        {
+            "uri": "ur3e_normal.ktx2"
+        },
+        {
+            "uri": "ur3e_color.ktx2"
+        },
+        {
+            "uri": "ur3e_occlusion_roughness_metallic.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 3
+                }
+            }
+        },
+        {
+            "sampler": 0,
+            "source": 1,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 4
+                }
+            }
+        },
+        {
+            "sampler": 0,
+            "source": 2,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 5
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "ur3e_material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000012,
+                    0.800000012,
+                    0.800000012,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            },
+            "normalTexture": {
+                "index": 0
+            },
+            "occlusionTexture": {
+                "index": 2
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "shoulder",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

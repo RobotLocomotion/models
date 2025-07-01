@@ -1,142 +1,152 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 588,
-      "min": [
-        -0.006000000052154064,
-        -0.014999999664723873,
-        -0.04100000113248825
-      ],
-      "max": [
-        0.014000000432133675,
-        0.014999999664723873,
-        0.04100000113248825
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "name": "Node-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 588,
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 996,
-      "min": [
-        0
-      ],
-      "max": [
-        587
-      ],
-      "type": "SCALAR",
-      "bufferView": 2,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "finger_without_tip",
-      "byteLength": 16104,
-      "uri": "finger_without_tip.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 7056,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 7056,
-      "byteOffset": 7056,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 1992,
-      "byteOffset": 14112,
-      "target": 34963
-    }
-  ],
-  "materials": [
-    {
-      "name": "default",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.01,
-          0.01,
-          0.01,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1
-          },
-          "indices": 2,
-          "material": 0,
-          "mode": 4
+            "uri": "finger_without_tip.bin",
+            "byteLength": 7408
+        },
+        {
+            "uri": "finger_without_tip.fallback.bin",
+            "byteLength": 16056,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 7032,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 4647,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 586
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 7032,
+            "byteLength": 7032,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 4648,
+                    "byteLength": 2401,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 586
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 14064,
+            "byteLength": 1992,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 7052,
+                    "byteLength": 355,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 996
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 586,
+            "type": "VEC3",
+            "min": [
+                -0.00600000005,
+                -0.0149999997,
+                -0.0410000011
+            ],
+            "max": [
+                0.0140000004,
+                0.0149999997,
+                0.0410000011
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 586,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 996,
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "name": "default",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.00999999978,
+                    0.00999999978,
+                    0.00999999978,
+                    1
+                ],
+                "metallicFactor": 0,
+                "roughnessFactor": 0.800000012
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }
