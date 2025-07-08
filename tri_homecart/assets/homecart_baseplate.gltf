@@ -1,120 +1,153 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"homecart_baseplate"
-		}
-	],
-	"materials":[
-		{
-			"doubleSided":true,
-			"name":"homecart_baseplate_material",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.4000000059604645,
-					0.4000000059604645,
-					0.4000000059604645,
-					1
-				],
-				"roughnessFactor":0.30000001192092896
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"homecart_baseplate",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0
-				}
-			]
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":400,
-			"max":[
-				0.3407999873161316,
-				0,
-				0.49320000410079956
-			],
-			"min":[
-				-0.3407999873161316,
-				-0.006500000134110451,
-				-0.49320000410079956
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":400,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":400,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":3,
-			"componentType":5123,
-			"count":1092,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":4800,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":4800,
-			"byteOffset":4800,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":3200,
-			"byteOffset":9600,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":2184,
-			"byteOffset":12800,
-			"target":34963
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":14984,
-			"uri":"homecart_baseplate.bin"
-		}
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
+        {
+            "uri": "homecart_baseplate.bin",
+            "byteLength": 5012
+        },
+        {
+            "uri": "homecart_baseplate.fallback.bin",
+            "byteLength": 11400,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 4608,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 2830,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 384
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 4608,
+            "byteLength": 4608,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 2832,
+                    "byteLength": 1773,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 384
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 9216,
+            "byteLength": 2184,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 4608,
+                    "byteLength": 402,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 1092
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 384,
+            "type": "VEC3",
+            "min": [
+                -0.340799987,
+                -0.00650000013,
+                -0.493200004
+            ],
+            "max": [
+                0.340799987,
+                0,
+                0.493200004
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 384,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1092,
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "name": "homecart_baseplate_material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.400000006,
+                    0.400000006,
+                    0.400000006,
+                    1
+                ],
+                "roughnessFactor": 0.300000012
+            },
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "homecart_baseplate",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }
