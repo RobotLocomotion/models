@@ -1,115 +1,126 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 453,
-      "min": [
-        -0.2929382920265198,
-        -0.5060011148452759,
-        -0.2635734975337982
-      ],
-      "max": [
-        0.1142253428697586,
-        0.3163740634918213,
-        0.2642788887023926
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 2385,
-      "min": [
-        0
-      ],
-      "max": [
-        452
-      ],
-      "type": "SCALAR",
-      "bufferView": 1,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "torso_lift",
-      "byteLength": 10208,
-      "uri": "torso_lift.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 5436,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 4772,
-      "byteOffset": 5436,
-      "target": 34963
-    }
-  ],
-  "materials": [
-    {
-      "name": "default",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.4,
-          0.4,
-          0.4,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0
-          },
-          "indices": 1,
-          "material": 0,
-          "mode": 4
+            "uri": "torso_lift.bin",
+            "byteLength": 5400
+        },
+        {
+            "uri": "torso_lift.fallback.bin",
+            "byteLength": 10208,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 5436,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 4423,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 453
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 5436,
+            "byteLength": 4770,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 4424,
+                    "byteLength": 976,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 2385
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 453,
+            "type": "VEC3",
+            "min": [
+                -0.292938292,
+                -0.506001115,
+                -0.263573498
+            ],
+            "max": [
+                0.114225343,
+                0.316374063,
+                0.264278889
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 2385,
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "name": "default",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.400000006,
+                    0.400000006,
+                    0.400000006,
+                    1
+                ],
+                "metallicFactor": 0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0
+                    },
+                    "indices": 1,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }
