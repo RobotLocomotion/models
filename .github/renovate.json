@@ -3,5 +3,9 @@
   "extends": [
     "config:recommended",
     "group:all"
+  ],
+  "timezone": "America/New_York",
+  "schedule": [
+    "* * 1 * *"
   ]
 }
