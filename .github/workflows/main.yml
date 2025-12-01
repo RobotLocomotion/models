@@ -17,7 +17,7 @@ jobs:
       # This is where bazelisk caches its downloads of Bazel.
       BAZELISK_HOME: /home/runner/.cache/bazel_ci/bazelisk
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Install Ubuntu dependencies
         run: .github/ci_setup.bash
       # Restore the most appropriate caches.
