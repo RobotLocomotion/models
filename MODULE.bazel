@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 bazel_dep(name = "bazel_skylib", version = "1.8.2")
-bazel_dep(name = "rules_python", version = "1.6.3")
+bazel_dep(name = "rules_python", version = "1.7.0")
 
 http_archive = use_repo_rule(
     "@bazel_tools//tools/build_defs/repo:http.bzl",
