@@ -46,7 +46,7 @@ jobs:
       # * For subsequent builds of a PR, the first restore key, e.g.,
       #   "bazel_ci-refs/pull/###/merge-" should match the most recently saved
       #   PR key "bazel_ci-refs/pull/###/merge-####-#".
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: ~/.cache/bazel_ci
           key: bazel_ci-${{ github.ref }}-${{ github.run_number }}-${{ github.run_attempt }}
@@ -65,7 +65,7 @@ jobs:
       # By default, actions/cache only saves after a successful workflow, but
       # our caches are bags of files where we only ever add new files (not change
       # an existing files), so it's always safe to snapshot.
-      - uses: actions/cache/save@v4
+      - uses: actions/cache/save@v5
         if: always()
         with:
           path: ~/.cache/bazel_ci
