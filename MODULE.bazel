@@ -7,7 +7,7 @@ http_archive = use_repo_rule(
     "@bazel_tools//tools/build_defs/repo:http.bzl",
     "http_archive",
 )
-
+# TODO: Remove this line after GHA succeeds
 http_archive(
     name = "xacro",
     build_file_content = """
