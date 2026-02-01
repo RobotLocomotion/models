@@ -18,7 +18,7 @@ jobs:
       - name: Install Ubuntu dependencies
         run: .github/ci_setup.bash
       # Use setup-bazel for caching.
-      - uses: bazel-contrib/setup-bazel@0.15.0
+      - uses: bazel-contrib/setup-bazel@0.18.0
         with:
           # Use the cached Bazelisk version, or download if not found.
           bazelisk-cache: true
