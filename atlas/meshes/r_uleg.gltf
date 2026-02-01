@@ -1,148 +1,205 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.3.47",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"Node"
-		}
-	],
-	"materials":[
-		{
-			"name":"_08 - Default",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0,
-				"roughnessFactor":0.9980000257492065
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"Node-Mesh.022",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
-					},
-					"indices":3,
-					"material":0
-				}
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0,
-			"extensions":{
-				"KHR_texture_basisu":{
-					"source":1
-				}
-			}
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"right_leg_diffuse_unplugged",
-			"uri":"right_leg_diffuse_unplugged.png"
-		},
-		{
-			"mimeType":"image/ktx2",
-			"uri":"right_leg_diffuse_unplugged.ktx2"
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":1881,
-			"max":[
-				0.08299999684095383,
-				0.01979999989271164,
-				0.07429999858140945
-			],
-			"min":[
-				-0.12780000269412994,
-				-0.3928999900817871,
-				-0.0737999975681305
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":1881,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":1881,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":3,
-			"componentType":5123,
-			"count":7392,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":22572,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":22572,
-			"byteOffset":22572,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":15048,
-			"byteOffset":45144,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":14784,
-			"byteOffset":60192,
-			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":74976,
-			"uri":"r_uleg.bin"
-		}
-	],
-	"extensionsUsed":[
-		"KHR_texture_basisu"
-	]
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
+    },
+    "extensionsUsed": [
+        "EXT_meshopt_compression",
+        "KHR_texture_basisu"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_basisu"
+    ],
+    "buffers": [
+        {
+            "uri": "r_uleg.bin",
+            "byteLength": 51416
+        },
+        {
+            "uri": "r_uleg.fallback.bin",
+            "byteLength": 74976,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 22572,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 18268,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 1881
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 22572,
+            "byteLength": 22572,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 18268,
+                    "byteLength": 19241,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 1881
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 45144,
+            "byteLength": 15048,
+            "byteStride": 8,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 37512,
+                    "byteLength": 11195,
+                    "byteStride": 8,
+                    "mode": "ATTRIBUTES",
+                    "count": 1881
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 60192,
+            "byteLength": 14784,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 48708,
+                    "byteLength": 2708,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 7392
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1881,
+            "type": "VEC3",
+            "min": [
+                -0.127800003,
+                -0.39289999,
+                -0.0737999976
+            ],
+            "max": [
+                0.0829999968,
+                0.0197999999,
+                0.0742999986
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1881,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1881,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 7392,
+            "type": "SCALAR"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "images": [
+        {
+            "name": "right_leg_diffuse_unplugged",
+            "uri": "right_leg_diffuse_unplugged.png"
+        },
+        {
+            "uri": "right_leg_diffuse_unplugged.ktx2"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "extensions": {
+                "KHR_texture_basisu": {
+                    "source": 1
+                }
+            }
+        }
+    ],
+    "materials": [
+        {
+            "name": "_08 - Default",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.998000026
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }

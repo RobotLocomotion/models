@@ -1,142 +1,152 @@
 {
-  "accessors": [
-    {
-      "name": "Node-Mesh_0_positions",
-      "componentType": 5126,
-      "count": 1803,
-      "min": [
-        -0.06208200007677078,
-        0.02969999983906746,
-        -0.12724700570106506
-      ],
-      "max": [
-        0.062098998576402664,
-        0.11457899957895279,
-        0.06680600345134735
-      ],
-      "type": "VEC3",
-      "bufferView": 0,
-      "byteOffset": 0
+    "asset": {
+        "version": "2.0",
+        "generator": "gltfpack 0.23"
     },
-    {
-      "name": "Node-Mesh_0_normals",
-      "componentType": 5126,
-      "count": 1803,
-      "min": [
-        -0.9842996001243591,
-        -0.0016069995472207665,
-        -0.36337411403656006
-      ],
-      "max": [
-        0.9999986886978149,
-        1,
-        0.993055522441864
-      ],
-      "type": "VEC3",
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Node-Mesh_0_indices",
-      "componentType": 5123,
-      "count": 9777,
-      "min": [
-        0
-      ],
-      "max": [
-        1802
-      ],
-      "type": "SCALAR",
-      "bufferView": 2,
-      "byteOffset": 0
-    }
-  ],
-  "asset": {
-    "generator": "obj2gltf",
-    "version": "2.0"
-  },
-  "buffers": [
-    {
-      "name": "link_4_orange",
-      "byteLength": 62828,
-      "uri": "link_4_orange.bin"
-    }
-  ],
-  "bufferViews": [
-    {
-      "name": "bufferView_0",
-      "buffer": 0,
-      "byteLength": 21636,
-      "byteOffset": 0,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_1",
-      "buffer": 0,
-      "byteLength": 21636,
-      "byteOffset": 21636,
-      "byteStride": 12,
-      "target": 34962
-    },
-    {
-      "name": "bufferView_2",
-      "buffer": 0,
-      "byteLength": 19556,
-      "byteOffset": 43272,
-      "target": 34963
-    }
-  ],
-  "materials": [
-    {
-      "name": "orange",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1.0,
-          0.15,
-          0,
-          1
-        ],
-        "metallicFactor": 0.4,
-        "roughnessFactor": 0.5
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE",
-      "doubleSided": false
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Node-Mesh",
-      "primitives": [
+    "extensionsUsed": [
+        "EXT_meshopt_compression"
+    ],
+    "buffers": [
         {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1
-          },
-          "indices": 2,
-          "material": 0,
-          "mode": 4
+            "uri": "link_4_orange.bin",
+            "byteLength": 37052
+        },
+        {
+            "uri": "link_4_orange.fallback.bin",
+            "byteLength": 62828,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "fallback": true
+                }
+            }
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Node",
-      "mesh": 0
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ]
+    ],
+    "bufferViews": [
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 21636,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 0,
+                    "byteLength": 16242,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 1803
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 21636,
+            "byteLength": 21636,
+            "byteStride": 12,
+            "target": 34962,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 16244,
+                    "byteLength": 16899,
+                    "byteStride": 12,
+                    "mode": "ATTRIBUTES",
+                    "count": 1803
+                }
+            }
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 43272,
+            "byteLength": 19554,
+            "target": 34963,
+            "extensions": {
+                "EXT_meshopt_compression": {
+                    "buffer": 0,
+                    "byteOffset": 33144,
+                    "byteLength": 3908,
+                    "byteStride": 2,
+                    "mode": "TRIANGLES",
+                    "count": 9777
+                }
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1803,
+            "type": "VEC3",
+            "min": [
+                -0.0620820001,
+                0.0296999998,
+                -0.127247006
+            ],
+            "max": [
+                0.0620989986,
+                0.114579,
+                0.0668060035
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1803,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9777,
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "name": "orange",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1,
+                    0.150000006,
+                    0,
+                    1
+                ],
+                "metallicFactor": 0.400000006,
+                "roughnessFactor": 0.5
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
 }
