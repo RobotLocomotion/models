@@ -31,11 +31,11 @@ py_binary(
 
 alias(name = "xacro", actual = ":xacro_bin")
 """,
-    sha256 = "dd9112a1bd955ba987c2a29d79aebf5a2892dfd362d661b7a345e28c0f5807b3",
-    strip_prefix = "xacro-2.0.10",
+    sha256 = "f9d94956574015427e59011d4ee113b206e9c10a27a0c01d4b08ee4268d76741",
+    strip_prefix = "xacro-2.1.1",
     urls = [
-        "https://github.com/ros/xacro/archive/refs/tags/2.0.10.tar.gz",
-        "https://drake-mirror.csail.mit.edu/github/ros/xacro/2.0.10.tar.gz",
-        "https://s3.amazonaws.com/drake-mirror/github/ros/xacro/2.0.10.tar.gz",
+        "https://github.com/ros/xacro/archive/refs/tags/2.1.1.tar.gz",
+        "https://drake-mirror.csail.mit.edu/github/ros/xacro/2.1.1.tar.gz",
+        "https://s3.amazonaws.com/drake-mirror/github/ros/xacro/2.1.1.tar.gz",
     ],
 )
